@@ -1,0 +1,67 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+h4 {
+  font-size: clamp(1.3rem, 2vw, 1.5rem);
+}
+
+h5 {
+  font-size: 1.125em;
+  color: rgb(4, 30, 14);
+}
+
+h1, h2 {
+  color: rgb(29, 181, 89);
+}
+
+p {
+  font-size: 1em;
+  color: rgb(84, 84, 84);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  color: rgb(84, 84, 84);
+}
+
+.padding-wrapper {
+  padding: 0 40px;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.hero-section {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */
