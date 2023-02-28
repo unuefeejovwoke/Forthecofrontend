@@ -119,6 +119,7 @@
 
 /*======END OF DEVELOPER CIRCLE SECTION STYLING=====*/
 
+/*======COMING SOON SECTION STYLING=====*/
 .coming-soon__app {
   max-width: 1200px;
   margin: auto;
@@ -137,6 +138,9 @@
       width: 200px;
       height: auto;
     }
+  }
+  .img-description__2 {
+    display: none;
   }
   .img-group {
     display: flex;
@@ -191,6 +195,62 @@
   }
 }
 
+@media (max-width: 850px) {
+  .coming-soon__app {
+    margin: 96px auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: auto;
+
+    .img-description {
+      width: 80%;
+    }
+    .img-group {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      position: static;
+      transform: translateY(60px);
+    }
+    .img-abs-position {
+      flex-flow: row wrap;
+    }
+
+    .text-description {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .coming-soon__app {
+    .img-description {
+      display: none;
+    }
+    .img-description__2 {
+      display: block;
+      width: 100%;
+      img {
+        width: calc(100% / 3);
+        height: auto;
+      }
+    }
+    .img-group {
+      transform: translateY(60px);
+    }
+    .img-abs-position {
+      display: inline;
+      flex-flow: row wrap;
+    }
+
+    .text-description {
+      width: 100%;
+    }
+  }
+}
+/*======END OF COMING SOON SECTION STYLING=====*/
+
+/*======ECO INTORDUCTION SECTION STYLING=====*/
 .eco-introduction {
   padding: 24px;
   header {
@@ -246,6 +306,22 @@
   }
 }
 
+@media (max-width: 800px) {
+  .intro--container {
+    place-items: center;
+  }
+}
+@media (max-width: 530px) {
+  .eco-introduction {
+    .custom-underline {
+      width: 100% !important;
+    }
+  }
+}
+
+/*======ECO INTORDUCTION SECTION STYLING=====*/
+
+/*======TECH4GOOD AFRICA SECTION STYLING=====*/
 .t4ga-section {
   margin: 96px 0;
   display: flex;
@@ -273,6 +349,7 @@
     gap: 12px;
     align-items: center;
     transform: translateY(40px);
+    margin-bottom: 48px;
 
     img {
       width: 24px;
@@ -281,6 +358,34 @@
   }
 }
 
+@media (max-width: 650px) {
+  .t4ga-section {
+    flex-direction: column;
+    justify-content: center;
+
+    .img-description,
+    .text-description {
+      width: 80%;
+    }
+
+    .img-description {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .t4ga-section {
+    height: auto;
+    .img-description,
+    .text-description {
+      width: 100%;
+    }
+  }
+}
+/*======END OF TECH4GOOD AFRICA SECTION STYLING=====*/
+
+/*======FEATURE SECTION STYLING=====*/
 .features-section {
   padding: 24px;
   display: flex;
@@ -316,6 +421,31 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .features-section {
+    flex-direction: column;
+    justify-content: center;
+    .lhs-description {
+      text-align: center;
+      margin: 24px 0 48px;
+    }
+    .lhs-description,
+    .rhs-description {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .features-section {
+    .rhs-description {
+      place-items: center;
+    }
+  }
+}
+/*======END OF FEATURE SECTION STYLING=====*/
+
+/*======CONTACT SECTION STYLING=====*/
 .contact-section {
   padding: 24px;
   margin-top: 96px;
@@ -375,3 +505,32 @@
     }
   }
 }
+
+@media (max-width: 850px) {
+  .contact-section {
+    flex-direction: column;
+    margin-top: 48px;
+
+    .lhs-description {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    .rhs-description {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .contact-section {
+    .rhs-description {
+      .input-field,
+      textarea,
+      label,
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+/*======END OF CONTACT SECTION STYLING=====*/

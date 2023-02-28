@@ -1,3 +1,4 @@
+/*======FOOTER SECTION STYLING=====*/
 footer{
     position: relative;
     background-color: rgba(38, 50, 56, 1);
@@ -17,6 +18,7 @@ footer{
 }
 .footer--wrapper{
     display: flex;
+    gap: 24px;
     flex-flow: row wrap;
     justify-content: space-around;
     .logo-container{
@@ -45,3 +47,13 @@ footer{
         }
     }
 }
+
+@media (max-width: 550px){
+    .footer--wrapper{
+        justify-content: flex-start;
+        .logo-container{
+            width: 100%;
+        }
+    }
+}
+/*======END OF FOOTER SECTION STYLING=====*/

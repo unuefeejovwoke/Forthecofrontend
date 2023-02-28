@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(1.7rem, 3vw, 3rem);
   line-height: 1.2;
 }
 
@@ -251,6 +251,7 @@ textarea {
 }
 
 /*======END OF DEVELOPER CIRCLE SECTION STYLING=====*/
+/*======COMING SOON SECTION STYLING=====*/
 .coming-soon__app {
   max-width: 1200px;
   margin: auto;
@@ -270,6 +271,9 @@ textarea {
 .coming-soon__app .img-description img {
   width: 200px;
   height: auto;
+}
+.coming-soon__app .img-description__2 {
+  display: none;
 }
 .coming-soon__app .img-group {
   display: flex;
@@ -321,6 +325,55 @@ textarea {
   padding-left: 28px;
 }
 
+@media (max-width: 850px) {
+  .coming-soon__app {
+    margin: 96px auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: auto;
+  }
+  .coming-soon__app .img-description {
+    width: 80%;
+  }
+  .coming-soon__app .img-group {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    position: static;
+    transform: translateY(60px);
+  }
+  .coming-soon__app .img-abs-position {
+    flex-flow: row wrap;
+  }
+  .coming-soon__app .text-description {
+    width: 80%;
+  }
+}
+@media (max-width: 550px) {
+  .coming-soon__app .img-description {
+    display: none;
+  }
+  .coming-soon__app .img-description__2 {
+    display: block;
+    width: 100%;
+  }
+  .coming-soon__app .img-description__2 img {
+    width: 33.3333333333%;
+    height: auto;
+  }
+  .coming-soon__app .img-group {
+    transform: translateY(60px);
+  }
+  .coming-soon__app .img-abs-position {
+    display: inline;
+    flex-flow: row wrap;
+  }
+  .coming-soon__app .text-description {
+    width: 100%;
+  }
+}
+/*======END OF COMING SOON SECTION STYLING=====*/
+/*======ECO INTORDUCTION SECTION STYLING=====*/
 .eco-introduction {
   padding: 24px;
 }
@@ -374,6 +427,18 @@ textarea {
   margin-bottom: 12px;
 }
 
+@media (max-width: 800px) {
+  .intro--container {
+    place-items: center;
+  }
+}
+@media (max-width: 530px) {
+  .eco-introduction .custom-underline {
+    width: 100% !important;
+  }
+}
+/*======ECO INTORDUCTION SECTION STYLING=====*/
+/*======TECH4GOOD AFRICA SECTION STYLING=====*/
 .t4ga-section {
   margin: 96px 0;
   display: flex;
@@ -399,12 +464,37 @@ textarea {
   gap: 12px;
   align-items: center;
   transform: translateY(40px);
+  margin-bottom: 48px;
 }
 .t4ga-section .socials--container img {
   width: 24px;
   height: auto;
 }
 
+@media (max-width: 650px) {
+  .t4ga-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .t4ga-section .img-description,
+  .t4ga-section .text-description {
+    width: 80%;
+  }
+  .t4ga-section .img-description {
+    text-align: center;
+  }
+}
+@media (max-width: 550px) {
+  .t4ga-section {
+    height: auto;
+  }
+  .t4ga-section .img-description,
+  .t4ga-section .text-description {
+    width: 100%;
+  }
+}
+/*======END OF TECH4GOOD AFRICA SECTION STYLING=====*/
+/*======FEATURE SECTION STYLING=====*/
 .features-section {
   padding: 24px;
   display: flex;
@@ -440,6 +530,27 @@ textarea {
   margin-bottom: 12px;
 }
 
+@media (max-width: 1024px) {
+  .features-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .features-section .lhs-description {
+    text-align: center;
+    margin: 24px 0 48px;
+  }
+  .features-section .lhs-description,
+  .features-section .rhs-description {
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .features-section .rhs-description {
+    place-items: center;
+  }
+}
+/*======END OF FEATURE SECTION STYLING=====*/
+/*======CONTACT SECTION STYLING=====*/
 .contact-section {
   padding: 24px;
   margin-top: 96px;
@@ -496,6 +607,29 @@ textarea {
   margin: auto;
 }
 
+@media (max-width: 850px) {
+  .contact-section {
+    flex-direction: column;
+    margin-top: 48px;
+  }
+  .contact-section .lhs-description {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .contact-section .rhs-description {
+    width: 100%;
+  }
+}
+@media (max-width: 850px) {
+  .contact-section .rhs-description .input-field,
+  .contact-section .rhs-description textarea,
+  .contact-section .rhs-description label,
+  .contact-section .rhs-description button {
+    width: 100%;
+  }
+}
+/*======END OF CONTACT SECTION STYLING=====*/
+/*======FOOTER SECTION STYLING=====*/
 footer {
   position: relative;
   background-color: rgb(38, 50, 56);
@@ -516,6 +650,7 @@ footer .copyright {
 
 .footer--wrapper {
   display: flex;
+  gap: 24px;
   flex-flow: row wrap;
   justify-content: space-around;
 }
@@ -539,4 +674,14 @@ footer .copyright {
 }
 .footer--wrapper .contact-adress div {
   margin-bottom: 24px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+@media (max-width: 550px) {
+  .footer--wrapper {
+    justify-content: flex-start;
+  }
+  .footer--wrapper .logo-container {
+    width: 100%;
+  }
+}
+/*======END OF FOOTER SECTION STYLING=====*//*# sourceMappingURL=main.css.map */
