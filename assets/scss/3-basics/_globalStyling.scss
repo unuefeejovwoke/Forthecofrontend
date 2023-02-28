@@ -59,6 +59,13 @@ img{
   object-position: center;
 }
 
+.primary-color{
+  color: $primaryColor
+}
+
+.non-bold{
+  font-weight: 400;
+}
 // .body--wrapper{
 //   padding: 0 24px;
 // }

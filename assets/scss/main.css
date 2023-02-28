@@ -63,6 +63,14 @@ img {
      object-position: center;
 }
 
+.primary-color {
+  color: rgb(29, 181, 89);
+}
+
+.non-bold {
+  font-weight: 400;
+}
+
 .btn {
   font-family: inherit;
   font-size: 1em;
@@ -125,6 +133,18 @@ button {
   line-height: 1;
   font-family: inherit;
   font-size: 1em;
+}
+
+textarea {
+  display: block;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  height: 200px;
+  padding: 6px 8px;
+  line-height: 1;
+  font-family: inherit;
+  font-size: 1em;
+  resize: none;
 }
 
 /*======HERO SECTION STYLING=====*/
@@ -359,7 +379,7 @@ button {
   display: flex;
   gap: 24px;
   align-items: center;
-  background: linear-gradient(91.56deg, #F5F7FA 0.55%, #B8C6DB 98.03%);
+  background: linear-gradient(91.56deg, #f5f7fa 0.55%, #b8c6db 98.03%);
   padding: 24px;
 }
 .t4ga-section .img-description {
@@ -383,4 +403,140 @@ button {
 .t4ga-section .socials--container img {
   width: 24px;
   height: auto;
+}
+
+.features-section {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: url("../images/Tech-4-good-bg.png") no-repeat, center;
+  background-size: cover;
+}
+.features-section .lhs-description {
+  width: 50%;
+}
+.features-section .rhs-description {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 24px;
+}
+.features-section .rhs-description h4 {
+  margin-bottom: 12px;
+}
+.features-section .rhs-description .features--container {
+  max-width: 400px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #ffffff;
+  border-top: 2px solid #1db559;
+  box-shadow: 0px 0px 16px rgba(13, 13, 13, 0.25);
+  border-radius: 10px;
+}
+.features-section .rhs-description .eco-icon {
+  width: 32px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.contact-section {
+  padding: 24px;
+  margin-top: 96px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 24px;
+}
+.contact-section .lhs-description {
+  width: 50%;
+}
+.contact-section .lhs-description header {
+  max-width: 500px;
+}
+.contact-section .lhs-description h4 {
+  margin-bottom: 12px;
+}
+.contact-section .rhs-description {
+  width: 50%;
+}
+.contact-section .rhs-description form {
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+.contact-section .rhs-description div {
+  margin-bottom: 24px;
+  display: block;
+  text-align: left;
+}
+.contact-section .rhs-description .input-field,
+.contact-section .rhs-description textarea {
+  margin: auto;
+  width: 80%;
+  margin-top: 12px;
+}
+.contact-section .rhs-description .input-field {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z' fill='rgba(148,148,148,1)'/%3E%3C/svg%3E");
+  background-position: 1%;
+  background-repeat: no-repeat;
+  padding-left: 32px;
+}
+.contact-section .rhs-description label {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+.contact-section .rhs-description button {
+  width: 80%;
+  margin: auto;
+}
+
+footer {
+  position: relative;
+  background-color: rgb(38, 50, 56);
+  padding: 32px 24px;
+  color: #fff;
+  min-height: 300px;
+}
+footer hr {
+  margin: 24px auto;
+  width: 100%;
+  color: rgb(114, 119, 121);
+}
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.footer--wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.footer--wrapper .logo-container img {
+  width: 100px;
+  height: auto;
+}
+.footer--wrapper h5 {
+  margin-bottom: 12px;
+  color: #fff;
+}
+.footer--wrapper li {
+  color: #fff;
+  padding: 6px 0;
+  width: 100%;
+  transition: 0.3s;
+}
+.footer--wrapper li:hover {
+  margin-left: 2px;
+  transition: 0.3s;
+}
+.footer--wrapper .contact-adress div {
+  margin-bottom: 24px;
 }/*# sourceMappingURL=main.css.map */
