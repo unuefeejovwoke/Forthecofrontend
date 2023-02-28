@@ -1,0 +1,191 @@
+.problems-main {
+    width: 75%;
+
+    .heading {
+        margin-bottom: 1rem;
+
+        form {
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border: 1px solid black;
+            padding: 0.3rem 0.3rem;
+            border-radius: 0.5rem;
+            margin: 0.5rem 0;
+
+            input {
+                border: 0;
+                background: transparent;
+            }
+
+            button {
+                border: 0;
+                background: transparent;
+                background-color: $secondaryColor;
+                padding: 0.2rem;
+
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+.card-wrapper {
+    padding: 1rem;
+
+}
+
+.problems-card {
+    margin: 2rem auto;
+    width: 90%;
+    border-radius: 0.7rem;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.08);
+
+}
+
+.problem-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+
+    .goal {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 20%;
+            margin-left: 0.3rem;
+        }
+    }
+}
+
+.problem-details {
+    margin-top: 1rem;
+
+    .detail-img {
+        display: flex;
+        justify-content: space-between;
+
+        .first {
+            width: 62%;
+        }
+
+        .second {
+            width: 37%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+}
+
+.problem-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+
+    .problem-link {
+        width: 35%;
+        background-color: $secondaryColor;
+        justify-content: center;
+        color: white;
+        border-radius: 0.4rem;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        background: transparent;
+        border: 0;
+
+        img {
+            width: 40%;
+            margin-right: 0.3rem;
+        }
+
+        span {
+            font-size: 0.83rem;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 1020px) {
+    .heading form input {
+        width: 65%;
+    }
+
+    .problem-header div span,
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .heading {
+        margin-bottom: 0.5rem !important;
+    }
+
+    .heading form input {
+        width: 60%;
+    }
+
+    .problem-header div span,
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .problems-main {
+        width: 100%;
+    }
+
+    .heading form {
+        width: 40% !important;
+    }
+
+    .problem-header div span,
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .problems-main {
+        width: 100%;
+    }
+
+    .heading {
+        flex-direction: column;
+
+        form {
+            width: 70% !important;
+        }
+    }
+
+    .problem-header div span,
+    p {
+        font-size: 0.7rem;
+    }
+
+    .post-location {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 395px) {
+
+    .problem-header div span,
+    p {
+        font-size: 0.6rem;
+    }
+}

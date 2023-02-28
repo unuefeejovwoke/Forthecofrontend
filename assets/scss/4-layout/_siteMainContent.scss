@@ -1,1 +1,13 @@
 //This is where the otherr contents of the website sits
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -62,6 +62,399 @@ img {
      object-position: center;
 }
 
-.hero-section {
+.body-wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  box-shadow: 0px 4px 37px rgba(13, 13, 13, 0.2509803922);
+  border-radius: 0.7rem 0 0 0.7rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+nav .logo {
+  width: 5%;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+nav .logo img {
   width: 100%;
+}
+nav .nav-links {
+  flex-grow: 3;
+}
+nav .nav-links a {
+  margin: 0 0.5rem;
+  color: rgb(84, 84, 84);
+  font-size: 0.95rem;
+}
+nav .nav-links .eco-img {
+  width: 1.5%;
+  height: 5%;
+}
+nav .menu {
+  display: none;
+}
+nav .connect {
+  width: 30%;
+  background: #1DB559;
+  height: 100%;
+  padding: 1.3rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  -webkit-clip-path: polygon(25px 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(25px 0, 100% 0, 100% 100%, 0 100%);
+}
+nav .connect p {
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  width: 80%;
+  text-align: right;
+  margin-right: 2rem;
+}
+nav .connect .social-btn {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+nav .connect .social-btn button {
+  background: transparent;
+  border: 0;
+}
+nav .connect .social-btn button img {
+  width: 70%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .connect {
+    padding: 0.8rem 0 !important;
+  }
+  .connect p {
+    margin: 0.3rem 0 !important;
+    font-size: 0.6rem !important;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .body-wrapper {
+    width: 100% !important;
+  }
+  .nav-links a {
+    font-size: 0.8rem !important;
+    margin: 0 0.3rem !important;
+  }
+  .connect {
+    padding: 0.8rem 0 !important;
+  }
+  .connect p {
+    margin: 0.3rem 0 !important;
+    font-size: 0.6rem !important;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .logo {
+    width: 50%;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .nav-links a {
+    font-size: 0.7rem !important;
+    margin: 0 0.2rem !important;
+  }
+  .connect {
+    width: 35% !important;
+    padding: 0.5rem !important;
+  }
+  .connect p {
+    margin: 0.2rem 0 !important;
+    font-size: 0.55rem !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .body-wrapper {
+    margin: 0;
+    width: 100%;
+  }
+  nav {
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 0;
+  }
+  nav .logo {
+    width: 35%;
+  }
+  nav .logo img {
+    width: 40%;
+  }
+  nav .toggler {
+    display: none;
+  }
+  nav .menu {
+    display: block !important;
+  }
+  nav .menu button {
+    background: transparent;
+    border: 0;
+  }
+}
+.cat-wrapper {
+  padding: 2rem 1.2rem 0 1.2rem;
+}
+.cat-wrapper h5 {
+  font-size: 1.125em;
+}
+.cat-wrapper form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0.3rem 0.3rem;
+  border-radius: 0.3rem;
+  margin: 0.5rem 0;
+}
+.cat-wrapper form input {
+  border: 0;
+  background: transparent;
+}
+.cat-wrapper form button {
+  border: 0;
+  background: transparent;
+  background-color: rgb(46, 162, 207);
+  padding: 0.2rem;
+}
+.cat-wrapper form button img {
+  width: 70%;
+}
+
+.category {
+  width: 23%;
+  background-color: #D8E7F5;
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+  height: 70vh;
+  position: sticky;
+  top: 7.5rem;
+}
+
+.radio div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+@media only screen and (max-width: 1020px) {
+  .cat-wrapper h5 {
+    font-size: 0.9rem;
+  }
+  .cat-wrapper form input {
+    width: 65%;
+  }
+  .cat-wrapper form button img {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .category {
+    width: 25%;
+  }
+  .cat-wrapper h5 {
+    font-size: 0.8rem;
+  }
+  .cat-wrapper form input {
+    width: 60%;
+  }
+  .cat-wrapper form button img {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .category {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .category {
+    display: none;
+  }
+}
+.problems-main {
+  width: 75%;
+}
+.problems-main .heading {
+  margin-bottom: 1rem;
+}
+.problems-main .heading form {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  padding: 0.3rem 0.3rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+}
+.problems-main .heading form input {
+  border: 0;
+  background: transparent;
+}
+.problems-main .heading form button {
+  border: 0;
+  background: transparent;
+  background-color: rgb(46, 162, 207);
+  padding: 0.2rem;
+}
+.problems-main .heading form button img {
+  width: 70%;
+}
+
+.card-wrapper {
+  padding: 1rem;
+}
+
+.problems-card {
+  margin: 2rem auto;
+  width: 90%;
+  border-radius: 0.7rem;
+  box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.08);
+}
+
+.problem-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+.problem-header .goal {
+  display: flex;
+  align-items: center;
+}
+.problem-header .goal img {
+  width: 20%;
+  margin-left: 0.3rem;
+}
+
+.problem-details {
+  margin-top: 1rem;
+}
+.problem-details .detail-img {
+  display: flex;
+  justify-content: space-between;
+}
+.problem-details .detail-img .first {
+  width: 62%;
+}
+.problem-details .detail-img .second {
+  width: 37%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.problem-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+.problem-footer .problem-link {
+  width: 35%;
+  background-color: rgb(46, 162, 207);
+  justify-content: center;
+  color: white;
+  border-radius: 0.4rem;
+}
+.problem-footer button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 0;
+}
+.problem-footer button img {
+  width: 40%;
+  margin-right: 0.3rem;
+}
+.problem-footer button span {
+  font-size: 0.83rem;
+}
+
+@media only screen and (max-width: 1020px) {
+  .heading form input {
+    width: 65%;
+  }
+  .problem-header div span,
+  p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .heading {
+    margin-bottom: 0.5rem !important;
+  }
+  .heading form input {
+    width: 60%;
+  }
+  .problem-header div span,
+  p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .problems-main {
+    width: 100%;
+  }
+  .heading form {
+    width: 40% !important;
+  }
+  .problem-header div span,
+  p {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .problems-main {
+    width: 100%;
+  }
+  .heading {
+    flex-direction: column;
+  }
+  .heading form {
+    width: 70% !important;
+  }
+  .problem-header div span,
+  p {
+    font-size: 0.7rem;
+  }
+  .post-location {
+    display: flex;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 395px) {
+  .problem-header div span,
+  p {
+    font-size: 0.6rem;
+  }
+}
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
