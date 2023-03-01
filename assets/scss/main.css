@@ -63,7 +63,90 @@ img {
      object-position: center;
 }
 
-<<<<<<< HEAD
+.primary-color {
+  color: rgb(29, 181, 89);
+}
+
+.non-bold {
+  font-weight: 400;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1em;
+  height: 45px;
+  border: 0px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: rgb(29, 181, 89);
+  padding: 8px 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(46, 162, 207);
+  transition: 0.3s;
+}
+
+.btn--without-bg {
+  font-family: inherit;
+  font-size: 1em;
+  border: 1.5px solid #474747;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+.btn--without-bg:hover {
+  color: rgb(46, 162, 207);
+  border: 1.5px solid rgb(46, 162, 207);
+  transition: 0.3s;
+}
+
+.link-text {
+  font-weight: 600;
+  color: rgb(46, 162, 207);
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+.link-text:hover {
+  color: rgb(29, 181, 89);
+  transition: 0.3s;
+}
+
+button {
+  background: transparent;
+  border: 0px;
+}
+
+.input-field {
+  display: block;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  height: 48px;
+  padding: 6px 8px;
+  line-height: 1;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+textarea {
+  display: block;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  height: 200px;
+  padding: 6px 8px;
+  line-height: 1;
+  font-family: inherit;
+  font-size: 1em;
+  resize: none;
+}
+
 .body-wrapper {
   margin: 0 auto;
   width: 90%;
@@ -107,7 +190,7 @@ nav .connect {
   width: 30%;
   background: #1DB559;
   height: 100%;
-  padding: 1.3rem 0;
+  padding: 1.5rem 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -459,90 +542,6 @@ nav .connect .social-btn button img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}/*# sourceMappingURL=main.css.map */
-=======
-.primary-color {
-  color: rgb(29, 181, 89);
-}
-
-.non-bold {
-  font-weight: 400;
-}
-
-.btn {
-  font-family: inherit;
-  font-size: 1em;
-  height: 45px;
-  border: 0px;
-  border-radius: 8px;
-  color: #fff;
-  background-color: rgb(29, 181, 89);
-  padding: 8px 16px;
-  transition: 0.3s;
-  cursor: pointer;
-}
-.btn:hover {
-  background-color: rgb(46, 162, 207);
-  transition: 0.3s;
-}
-
-.btn--without-bg {
-  font-family: inherit;
-  font-size: 1em;
-  border: 1.5px solid #474747;
-  border-radius: 8px;
-  color: rgb(0, 0, 0);
-  padding: 8px 16px;
-  transition: 0.3s;
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-}
-.btn--without-bg:hover {
-  color: rgb(46, 162, 207);
-  border: 1.5px solid rgb(46, 162, 207);
-  transition: 0.3s;
-}
-
-.link-text {
-  font-weight: 600;
-  color: rgb(46, 162, 207);
-  padding: 4px 8px;
-  display: flex;
-  align-items: center;
-  transition: 0.3s;
-}
-.link-text:hover {
-  color: rgb(29, 181, 89);
-  transition: 0.3s;
-}
-
-button {
-  background: transparent;
-  border: 0px;
-}
-
-.input-field {
-  display: block;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 8px;
-  height: 48px;
-  padding: 6px 8px;
-  line-height: 1;
-  font-family: inherit;
-  font-size: 1em;
-}
-
-textarea {
-  display: block;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 8px;
-  height: 200px;
-  padding: 6px 8px;
-  line-height: 1;
-  font-family: inherit;
-  font-size: 1em;
-  resize: none;
 }
 
 /*======HERO SECTION STYLING=====*/
@@ -1083,4 +1082,3 @@ footer .copyright {
   }
 }
 /*======END OF FOOTER SECTION STYLING=====*//*# sourceMappingURL=main.css.map */
->>>>>>> 07905a070ca493c71bdc1844f94c5098c7c92890
