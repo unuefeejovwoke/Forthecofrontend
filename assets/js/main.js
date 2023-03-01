@@ -1,10 +1,11 @@
-'use strict'
+"use strict";
 
-const hamburger = document.querySelector('.menu--toggle');
-const navMenu = document.querySelector('.right--side__nav');
-const navLinkContainer = document.querySelector('.nav--items__container');
+const heading4 = document.querySelector(".abbreviation");
+const customUnderline = document.querySelector('.custom-underline');
 
-hamburger.addEventListener('click', function(){
-    navMenu.classList.toggle('showing');
-    navLinkContainer.classList.toggle('showing');
-});
+const headWidth = heading4.offsetWidth;
+const headLeft = heading4.offsetLeft;
+
+customUnderline.style.width = headWidth + "px";
+// customUnderline.style.left = headLeft + "px";
+
