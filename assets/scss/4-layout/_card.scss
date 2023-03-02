@@ -1,4 +1,4 @@
-.problems-main {
+.card-main {
   width: 75%;
 
   .heading {
@@ -38,14 +38,14 @@
   padding: 1rem;
 }
 
-.problems-card {
+.card {
   margin: 2rem auto;
   width: 90%;
   border-radius: 0.7rem;
   box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.08);
 }
 
-.problem-header {
+.card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,7 +62,7 @@
   }
 }
 
-.problem-details {
+.card-details {
   margin-top: 1rem;
 
   .detail-img {
@@ -82,13 +82,13 @@
   }
 }
 
-.problem-footer {
+.card-footer {
   width: 100%;
   display: flex;
   justify-content: space-around;
   margin: 1rem 0;
 
-  .problem-link {
+  .card-link {
     width: 35%;
     background-color: $secondaryColor;
     justify-content: center;
@@ -118,7 +118,7 @@
     width: 65%;
   }
 
-  .problem-header div span,
+    .card-header div span,
   p {
     font-size: 0.9rem;
   }
@@ -133,14 +133,14 @@
     width: 60%;
   }
 
-  .problem-header div span,
+    .card-header div span,
   p {
     font-size: 0.9rem;
   }
 }
 
 @media only screen and (max-width: 660px) {
-  .problems-main {
+  .card-main {
     width: 100%;
   }
 
@@ -148,13 +148,13 @@
     width: 40% !important;
   }
 
-  .problem-header div span p {
+    .card-header div span p {
     font-size: 0.8rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .problems-main {
+  .card-main {
     width: 100%;
   }
 
@@ -166,7 +166,7 @@
     }
   }
 
-  .problem-header div span p {
+    .card-header div span p {
     font-size: 0.7rem;
   }
 
@@ -177,7 +177,7 @@
 }
 
 @media only screen and (max-width: 395px) {
-  .problem-header div span p {
+  .card-header div span p {
     font-size: 0.6rem;
   }
 }

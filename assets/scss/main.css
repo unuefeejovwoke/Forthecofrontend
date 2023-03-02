@@ -190,7 +190,7 @@ nav .connect {
   width: 30%;
   background: #1DB559;
   height: 100%;
-  padding: 1.3rem 0;
+  padding: 1.5rem 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -372,13 +372,13 @@ nav .connect .social-btn button img {
     display: none;
   }
 }
-.problems-main {
+.card-main {
   width: 75%;
 }
-.problems-main .heading {
+.card-main .heading {
   margin-bottom: 1rem;
 }
-.problems-main .heading form {
+.card-main .heading form {
   width: 30%;
   display: flex;
   justify-content: space-between;
@@ -389,17 +389,17 @@ nav .connect .social-btn button img {
   border-radius: 0.5rem;
   margin: 0.5rem 0;
 }
-.problems-main .heading form input {
+.card-main .heading form input {
   border: 0;
   background: transparent;
 }
-.problems-main .heading form button {
+.card-main .heading form button {
   border: 0;
   background: transparent;
   background-color: rgb(46, 162, 207);
   padding: 0.2rem;
 }
-.problems-main .heading form button img {
+.card-main .heading form button img {
   width: 70%;
 }
 
@@ -407,69 +407,69 @@ nav .connect .social-btn button img {
   padding: 1rem;
 }
 
-.problems-card {
+.card {
   margin: 2rem auto;
   width: 90%;
   border-radius: 0.7rem;
   box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.08);
 }
 
-.problem-header {
+.card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.4rem;
 }
-.problem-header .goal {
+.card-header .goal {
   display: flex;
   align-items: center;
 }
-.problem-header .goal img {
+.card-header .goal img {
   width: 20%;
   margin-left: 0.3rem;
 }
 
-.problem-details {
+.card-details {
   margin-top: 1rem;
 }
-.problem-details .detail-img {
+.card-details .detail-img {
   display: flex;
   justify-content: space-between;
 }
-.problem-details .detail-img .first {
+.card-details .detail-img .first {
   width: 62%;
 }
-.problem-details .detail-img .second {
+.card-details .detail-img .second {
   width: 37%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.problem-footer {
+.card-footer {
   width: 100%;
   display: flex;
   justify-content: space-around;
   margin: 1rem 0;
 }
-.problem-footer .problem-link {
+.card-footer .card-link {
   width: 35%;
   background-color: rgb(46, 162, 207);
   justify-content: center;
   color: white;
   border-radius: 0.4rem;
 }
-.problem-footer button {
+.card-footer button {
   display: flex;
   align-items: center;
   background: transparent;
   border: 0;
 }
-.problem-footer button img {
+.card-footer button img {
   width: 40%;
   margin-right: 0.3rem;
 }
-.problem-footer button span {
+.card-footer button span {
   font-size: 0.83rem;
 }
 
@@ -477,7 +477,7 @@ nav .connect .social-btn button img {
   .heading form input {
     width: 65%;
   }
-  .problem-header div span,
+  .card-header div span,
   p {
     font-size: 0.9rem;
   }
@@ -489,24 +489,24 @@ nav .connect .social-btn button img {
   .heading form input {
     width: 60%;
   }
-  .problem-header div span,
+  .card-header div span,
   p {
     font-size: 0.9rem;
   }
 }
 @media only screen and (max-width: 660px) {
-  .problems-main {
+  .card-main {
     width: 100%;
   }
   .heading form {
     width: 40% !important;
   }
-  .problem-header div span p {
+  .card-header div span p {
     font-size: 0.8rem;
   }
 }
 @media only screen and (max-width: 480px) {
-  .problems-main {
+  .card-main {
     width: 100%;
   }
   .heading {
@@ -515,7 +515,7 @@ nav .connect .social-btn button img {
   .heading form {
     width: 70% !important;
   }
-  .problem-header div span p {
+  .card-header div span p {
     font-size: 0.7rem;
   }
   .post-location {
@@ -524,7 +524,7 @@ nav .connect .social-btn button img {
   }
 }
 @media only screen and (max-width: 395px) {
-  .problem-header div span p {
+  .card-header div span p {
     font-size: 0.6rem;
   }
 }
