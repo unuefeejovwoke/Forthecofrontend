@@ -122,6 +122,13 @@
   p {
     font-size: 0.9rem;
   }
+.location {
+  font-size: 0.6rem !important;
+}
+
+.text-fix2 {
+  font-size: 0.6rem;
+}
 }
 
 @media only screen and (max-width: 770px) {
@@ -133,10 +140,13 @@
     width: 60%;
   }
 
-    .card-header div span,
-  p {
-    font-size: 0.9rem;
-  }
+.location {
+  font-size: 0.65rem !important;
+}
+
+.text-fix2 {
+  font-size: 0.6rem;
+}
 }
 
 @media only screen and (max-width: 660px) {
@@ -166,18 +176,33 @@
     }
   }
 
-    .card-header div span p {
-    font-size: 0.7rem;
+.text-fix {
+  font-size: 0.7rem;
   }
 
   .post-location {
     display: flex;
     align-items: center;
-  }
+}
+.location {
+  font-size: 0.5rem !important;
+}
+
+.text-fix2 {
+  font-size: 0.5rem;
+}
 }
 
 @media only screen and (max-width: 395px) {
-  .card-header div span p {
-    font-size: 0.6rem;
+  .text-fix {
+      font-size: 0.55rem;
+    }
+  
+    .location {
+      font-size: 0.5rem !important;
+    }
+  
+    .text-fix2 {
+      font-size: 0.45rem;
   }
 }

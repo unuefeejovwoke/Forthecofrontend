@@ -344,7 +344,7 @@ nav .connect .social-btn button img {
   .cat-wrapper form input {
     width: 65%;
   }
-  .cat-wrapper form button img {
+  .cat-wrapper form button imgitg {
     width: 40%;
   }
 }
@@ -481,6 +481,12 @@ nav .connect .social-btn button img {
   p {
     font-size: 0.9rem;
   }
+  .location {
+    font-size: 0.6rem !important;
+  }
+  .text-fix2 {
+    font-size: 0.6rem;
+  }
 }
 @media only screen and (max-width: 770px) {
   .heading {
@@ -489,9 +495,11 @@ nav .connect .social-btn button img {
   .heading form input {
     width: 60%;
   }
-  .card-header div span,
-  p {
-    font-size: 0.9rem;
+  .location {
+    font-size: 0.65rem !important;
+  }
+  .text-fix2 {
+    font-size: 0.6rem;
   }
 }
 @media only screen and (max-width: 660px) {
@@ -515,17 +523,29 @@ nav .connect .social-btn button img {
   .heading form {
     width: 70% !important;
   }
-  .card-header div span p {
+  .text-fix {
     font-size: 0.7rem;
   }
   .post-location {
     display: flex;
     align-items: center;
   }
+  .location {
+    font-size: 0.5rem !important;
+  }
+  .text-fix2 {
+    font-size: 0.5rem;
+  }
 }
 @media only screen and (max-width: 395px) {
-  .card-header div span p {
-    font-size: 0.6rem;
+  .text-fix {
+    font-size: 0.55rem;
+  }
+  .location {
+    font-size: 0.5rem !important;
+  }
+  .text-fix2 {
+    font-size: 0.45rem;
   }
 }
 .main-content {
