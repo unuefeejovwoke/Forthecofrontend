@@ -178,6 +178,7 @@ textarea {
   height: 100%;
   padding: 1.5rem;
   background-image: url("/assets/images/form/bg-01 1.png");
+  background-repeat: no-repeat;
 }
 .form-wrapper p {
   margin: 0.5rem;
@@ -198,6 +199,7 @@ textarea {
 }
 .form-switch .active {
   background-color: #32D272;
+  transition: background-color 1.5s;
 }
 
 .options {
@@ -215,6 +217,7 @@ textarea {
 
 .form-variables {
   width: 100% !important;
+  transition: display 2s;
 }
 .form-variables form {
   margin: 1.5rem 0;
@@ -283,6 +286,19 @@ textarea {
   }
   .form-variables p {
     font-size: 0.6rem;
+  }
+  .form-background {
+    background-image: none !important;
+  }
+  .form-content {
+    margin: 1rem 0;
+  }
+  .form {
+    width: 100% !important;
+    border-radius: 0;
+    background: #F9FFFB;
+    border-top: 0;
+    box-shadow: none;
   }
 }
 .body-wrapper {

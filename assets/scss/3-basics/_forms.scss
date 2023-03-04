@@ -54,6 +54,7 @@ textarea{
   height: 100%;
   padding: 1.5rem;
   background-image: url('/assets/images/form/bg-01\ 1.png');
+  background-repeat: no-repeat;
   p{
     margin: 0.5rem;
   }
@@ -72,6 +73,7 @@ textarea{
   }
   .active{
     background-color: #32D272;
+    transition: background-color 1.5s;
   }
 }
 .options{
@@ -89,6 +91,7 @@ textarea{
 
 .form-variables{
   width: 100% !important;
+  transition: display 2s;
   form{
     margin: 1.5rem 0;
   }
@@ -134,6 +137,7 @@ textarea{
 }
 .d-show{
   display: block;
+
 }
 
 @media only screen and (max-width: 770px){
@@ -155,4 +159,21 @@ textarea{
   .form-variables p{
     font-size: 0.6rem;
   }
+
+  .form-background{
+    background-image: none !important;
+  }
+  .form-content{
+    margin: 1rem 0;
+  }
+
+  .form{
+    width: 100% !important;
+    border-radius: 0;
+    background: #F9FFFB;
+    border-top: 0;
+    box-shadow: none;
+
+  }
+
 }
