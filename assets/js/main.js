@@ -4,6 +4,7 @@ const signUpBtn = document.querySelector('#signUpBtn');
 const loginPage = document.querySelector('#Login');
 const signUpPage = document.querySelector('#Register');
 
+
 setTimeout( ()=>{
     loginBtn.addEventListener('click', ()=>{
         loginPage.classList.add('d-show')
