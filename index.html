@@ -39,15 +39,15 @@
                 <button><img src="assets/images/notification/more.png" alt=""></button>
             </div>
         </nav>
-        
+
         <section class="hero-section">
             <article class="text-description">
                 <h1>Make your vote counts by developing with the PALs network</h1>
                 <a href="#"><button class="btn">Join the PALs network</button></a>
 
                 <div class="btn-group">
-                    <a href="problems.html"><button class="btn--without-bg secondary-cta">Add Problem</button></a>
-                    <a href="projects.html"><button class="btn--without-bg secondary-cta">Add Project</button></a>
+                    <button class="btn--without-bg secondary-cta" id="add-problem">Add Problem</button>
+                    <button class="btn--without-bg secondary-cta" id="add-project">Add Project</button>
                 </div>
 
                 <div class="metric--container">
@@ -65,6 +65,20 @@
             <article class="img-description">
                 <img src="assets/images/hero-img.png" alt="hero image for eco website">
             </article>
+        </section>
+
+        <div class="overlay hidden"></div>
+        <section class="modal hidden">
+            <div class="inner--modal">
+                <article class="project_modal--wrapper">
+                    <img src="assets/images/project-modal/close-btn.png" alt="" class="close-btn">
+                    <h5>Add an ECO Project</h5>
+                    <div class="btn-group">
+                        <button class="btn">Post with Profile</button>
+                        <button class="btn--without-bg">Post anonymously</button>
+                    </div>
+                </article>
+            </div>
         </section>
 
 

@@ -20,7 +20,7 @@
   align-items: center;
   padding: 12px 24px;
   background: url("../images/hero-background.png") no-repeat, center;
-  background-size: cover;
+  background-size: 70%;
   width: 100%;
 
   .text-description {
@@ -549,4 +549,81 @@
   }
 }
 /*======END OF CONTACT SECTION STYLING=====*/
+
+/*======ADD PROJECT AND PROBLEM PAGES STYLING======*/
+.project_modal--wrapper {
+  background-color: rgba(239, 245, 242, 1);
+  width: 80%;
+  margin: 48px auto;
+  padding: 32px;
+  border-radius: 10px;
+
+  .close-btn {
+    width: 32px;
+    height: auto;
+  }
+  h5 {
+    transform: translate(60px, -32px);
+  }
+
+  .location-field {
+    background-image: url("../icons/location-icon.png");
+    background-size: 30px;
+    background-position: 1%;
+    background-repeat: no-repeat;
+    width: 50%;
+    background-color: transparent;
+    padding-left: 36px;
+  }
+  p {
+    margin-top: 12px;
+  }
+
+  .projects-flier {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 24px;
+    margin: 32px 0;
+    img {
+      width: 96px;
+      height: auto;
+    }
+  }
+
+  .text-field {
+    display: block;
+    margin-bottom: 24px;
+    .input-field,
+    textarea {
+      background: transparent;
+      margin-top: 12px;
+      width: 100%;
+    }
+  }
+
+  .add-social-links{
+    display: flex;
+    justify-content: center;
+    .link-text{
+        font-weight: normal;
+    }
+  }
+
+  span{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  button{
+    border-color: $primaryColor;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    align-items: center;
+  }
+}
+/*======END OF ADD PROJECT AND PROBLEM PAGES STYLING======*/
+
 
