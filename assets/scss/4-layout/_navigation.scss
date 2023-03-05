@@ -46,39 +46,31 @@ nav {
 
     .connect {
         width: 30%;
-        background: #1DB559;
-        height: 100%;
-        padding: 1.5rem 0;
+        background: #F9FFFB;
+        // height: 100%;
+        padding: 1.4rem 0;
         display: flex;
-        justify-content: center;
-        flex-direction: column;
+        justify-content: space-around;
+        // flex-direction: column;
         align-items: center;
-        clip-path: polygon(25px 0, 100% 0, 100% 100%, 0 100%);
+        // clip-path: polygon(25px 0, 100% 0, 100% 100%, 0 100%);
         // z-index: 9;
-        // box-shadow: 8px 8px 37px rgba(13, 13, 13, 0.25);
+        box-shadow: 8px 8px 37px rgba(13, 13, 13, 0.25);
 
-        p {
-            font-size: 0.7rem;
-            margin-bottom: 0.5rem;
-            color: white;
-            width: 80%;
-            text-align: right;
-            margin-right: 2rem;
+        a{
+            width: 35%;
+            text-align: center;
+            padding: 0.7rem 0;
+            border-radius: 0.5rem;
+            font-size: 0.8rem;
         }
-
-        .social-btn {
-            display: flex;
-            justify-content: space-around;
-            width: 80%;
-
-            button {
-                background: transparent;
-                border: 0;
-
-                img {
-                    width: 70%;
-                }
-            }
+        #login1{
+            border: 1px solid #32D272;
+            color: #32D272;
+        }
+        #create1{
+            background-color: #32D272;
+            color: white;
         }
     }
 }
@@ -87,10 +79,12 @@ nav {
     .connect {
         padding: 0.8rem 0 !important;
 
-        p {
-            margin: 0.3rem 0 !important;
-            font-size: 0.6rem !important;
-        }
+    }
+}
+
+@media only screen and (max-width: 950px){
+    #create1{
+        font-size: 0.6rem;
     }
 }
 
@@ -107,8 +101,7 @@ nav {
     .connect {
         padding: 0.8rem 0 !important;
 
-        p {
-            margin: 0.3rem 0 !important;
+        a{
             font-size: 0.6rem !important;
         }
     }
@@ -132,12 +125,11 @@ nav {
     width: 35% !important;
     padding: 0.5rem !important;
 
-    p {
-            margin: 0.2rem 0 !important;
-            font-size: 0.55rem !important;
-        }
+    a{
+        font-size: 0.45rem !important;
     }
-    }
+}
+}
 
 @media only screen and (max-width: 480px) {
     .body-wrapper {
