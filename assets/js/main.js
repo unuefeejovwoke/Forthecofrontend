@@ -1,8 +1,8 @@
 //registeration page
-const loginBtn = document.querySelector("#loginBtn");
-const signUpBtn = document.querySelector("#signUpBtn");
-const loginPage = document.querySelector("#Login");
-const signUpPage = document.querySelector("#Register");
+const loginBtn = document.querySelector('#loginBtn');
+const signUpBtn = document.querySelector('#signUpBtn');
+const loginPage = document.querySelector('#Login');
+const signUpPage = document.querySelector('#Register');
 
 setTimeout(() => {
   loginBtn.addEventListener("click", () => {

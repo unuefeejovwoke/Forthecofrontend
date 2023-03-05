@@ -399,7 +399,7 @@ nav .menu {
 nav .connect {
   width: 30%;
   background: #F9FFFB;
-  padding: 1.4rem 0;
+  padding: 1.5rem 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -416,9 +416,18 @@ nav .connect #login1 {
   border: 1px solid #32D272;
   color: #32D272;
 }
+nav .connect #login1:hover {
+  border: 1px solid rgb(46, 162, 207);
+  color: rgb(46, 162, 207);
+  transition: 0.5s;
+}
 nav .connect #create1 {
   background-color: #32D272;
   color: white;
+}
+nav .connect #create1:hover {
+  background-color: rgb(46, 162, 207);
+  transition: 0.5s;
 }
 
 @media only screen and (max-width: 1020px) {

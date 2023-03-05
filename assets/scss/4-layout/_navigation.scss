@@ -48,7 +48,7 @@ nav {
         width: 30%;
         background: #F9FFFB;
         // height: 100%;
-        padding: 1.4rem 0;
+        padding: 1.5rem 0;
         display: flex;
         justify-content: space-around;
         // flex-direction: column;
@@ -68,9 +68,19 @@ nav {
             border: 1px solid #32D272;
             color: #32D272;
         }
+        #login1:hover{
+            border: 1px solid rgb(46, 162, 207);
+            color: rgb(46, 162, 207);
+            transition: 0.5s;
+        }
         #create1{
             background-color: #32D272;
             color: white;
+        }
+        #create1:hover{
+            background-color: rgb(46, 162, 207);
+            transition: 0.5s;
+            
         }
     }
 }
