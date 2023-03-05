@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco webisite</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!--Remix Icon CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/scss/main.css">
+    
+
+</head>
+
+<body>
+    <section class="project-page" id="root">
+        <article class="project_modal--wrapper">
+            <img src="assets/images/project-modal/close-btn.png" alt="" class="close-btn">
+            <h5>Add an ECO Problem Anonymously</h5>
+
+            <form action="index.html" method="get">
+                <input type="text" class="input-field location-field" name="location" placeholder="Add Location">
+                <p class="margin-bottom">City, State</p>
+
+                <div class="text-field">
+                    <label for="anon-name">Input Name (optional)</label>
+                    <input type="text" name="anon-name" id="anon-name" class="input-field"
+                        placeholder="Who's sponsoring project?" value="Anonymous">
+                </div>
+
+                <div class="text-field">
+                    <label for="problem-description">Problem Description</label>
+                    <textarea name="" id="" placeholder="Description of problem"></textarea>
+                </div>
+                
+                <div class="projects-flier">
+                    <img src="assets/images/project-modal/project-img__1.png" alt="">
+                    <img src="assets/images/project-modal/project-img__2.png" alt="">
+                    <img src="assets/images/project-modal/project-img__3.png" alt="">
+                    <img src="assets/images/project-modal/project-img__4.png" alt="">
+                    <img src="assets/images/project-modal/project-img__5.png" alt="">
+                </div>
+                <span><button type="submit" class="btn--without-bg">Proceed to Posting</button></span>
+            </form>
+        </article>
+    </section>
+</body>
+
+</html>

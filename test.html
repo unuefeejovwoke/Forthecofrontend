@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco webisite</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!--Remix Icon CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/scss/main.css">
+    <style>
+        .carousel--container {
+            width: 400px;
+            text-align: center;
+            text-align: -moz-center;
+
+        }
+
+        article {
+            width: 50%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <!--OWL CAROUSEL CSS CDN-->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+</head>
+
+<body>
+    <!-- <section class="carousel--container">
+        <div class="owl-carousel owl-theme" id="slider">
+                <article class="slide"><img src="assets/images/mockup-screen-2.png" alt=""></article>
+                <article class="slide"><img src="assets/images/mockup-screen-2.png" alt=""></article>
+                <article class="slide"><img src="assets/images/mockup-screen-2.png" alt=""></article>
+        </div>
+    </section> -->
+
+
+
+    <main class="carousel--card">
+        <article class="project--info">
+            <img src="assets/images/avatar.png" alt="preview avatar image">
+            <div class="flash--card">
+                <img src="assets/images/zero-hunger-flier.png" alt="flier for zero hunger">
+                <div class="zero--details">
+                    <p>Goal 2</p>
+                    <p class="semi-bold">No Hunger</p>
+                </div>
+            </div>
+            <div class="location--display">
+                <address>
+                    <img src="assets/icons/location-icon.png" alt="icon for location">
+                    <p class="location">Ikeja, Lagos</p>
+                </address>
+                <p>Community</p>
+            </div>
+        </article>
+        <article class="project--description">
+            <p>Despite efforts to increase agricultural productivity, a lack of infrastructure and resources, combined
+                with the effects of climate change, have led to chronic food shortages and malnourishment.</p>
+            <div class="img--container">
+                <img src="" alt=""><img src="" alt=""><img src="" alt="">
+            </div>
+        </article>
+    </main>
+
+    <!--OWL CAROUSEL 2 CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $('#slider').owlCarousel({
+            items: 1,
+            loop: true,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            center: true
+        })
+    </script>
+</body>
+
+</html>
+
+    
