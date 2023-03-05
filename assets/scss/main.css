@@ -387,44 +387,37 @@ nav .menu {
 }
 nav .connect {
   width: 30%;
-  background: #1DB559;
-  height: 100%;
-  padding: 1.3rem 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  -webkit-clip-path: polygon(25px 0, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(25px 0, 100% 0, 100% 100%, 0 100%);
-}
-nav .connect p {
-  font-size: 0.7rem;
-  margin-bottom: 0.5rem;
-  color: white;
-  width: 80%;
-  text-align: right;
-  margin-right: 2rem;
-}
-nav .connect .social-btn {
+  background: #F9FFFB;
+  padding: 1.4rem 0;
   display: flex;
   justify-content: space-around;
-  width: 80%;
+  align-items: center;
+  box-shadow: 8px 8px 37px rgba(13, 13, 13, 0.25);
 }
-nav .connect .social-btn button {
-  background: transparent;
-  border: 0;
+nav .connect a {
+  width: 35%;
+  text-align: center;
+  padding: 0.7rem 0;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
 }
-nav .connect .social-btn button img {
-  width: 70%;
+nav .connect #login1 {
+  border: 1px solid #32D272;
+  color: #32D272;
+}
+nav .connect #create1 {
+  background-color: #32D272;
+  color: white;
 }
 
 @media only screen and (max-width: 1020px) {
   .connect {
     padding: 0.8rem 0 !important;
   }
-  .connect p {
-    margin: 0.3rem 0 !important;
-    font-size: 0.6rem !important;
+}
+@media only screen and (max-width: 950px) {
+  #create1 {
+    font-size: 0.6rem;
   }
 }
 @media only screen and (max-width: 770px) {
@@ -438,8 +431,7 @@ nav .connect .social-btn button img {
   .connect {
     padding: 0.8rem 0 !important;
   }
-  .connect p {
-    margin: 0.3rem 0 !important;
+  .connect a {
     font-size: 0.6rem !important;
   }
 }
@@ -458,9 +450,8 @@ nav .connect .social-btn button img {
     width: 35% !important;
     padding: 0.5rem !important;
   }
-  .connect p {
-    margin: 0.2rem 0 !important;
-    font-size: 0.55rem !important;
+  .connect a {
+    font-size: 0.45rem !important;
   }
 }
 @media only screen and (max-width: 480px) {
