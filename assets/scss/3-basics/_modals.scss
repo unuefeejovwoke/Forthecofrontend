@@ -38,3 +38,15 @@
   backdrop-filter: blur(3px);
   z-index: 5;
 }
+
+@media (max-width: 650px) {
+  .modal {
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+    .modal {
+      width: 90%;
+    }
+  }
