@@ -1,8 +1,8 @@
 //registeration page
-const loginBtn = document.querySelector('#loginBtn');
-const signUpBtn = document.querySelector('#signUpBtn');
-const loginPage = document.querySelector('#Login');
-const signUpPage = document.querySelector('#Register');
+const loginBtn = document.querySelector("#loginBtn");
+const signUpBtn = document.querySelector("#signUpBtn");
+const loginPage = document.querySelector("#Login");
+const signUpPage = document.querySelector("#Register");
 
 setTimeout(() => {
   loginBtn.addEventListener("click", () => {
@@ -37,22 +37,33 @@ customUnderline.style.width = headWidth + "px";
 customUnderline.style.left = headLeft + "px";
 
 //SCRIPT FOR MODAL
-const modal = document.querySelector(".modal");
+const projectModal = document.querySelector(".project-modal");
+const problemModal = document.querySelector(".problem-modal");
 const overlay = document.querySelector(".overlay");
-const btnCloseModal = document.querySelector(".close-btn");
+const btnCloseModal = document.querySelectorAll(".close-btn");
 const btnOpenProjectModal = document.querySelector("#add-project");
+const btnOpenProblemModal = document.querySelector("#add-problem");
 
 const openModal = function () {
-  modal.classList.remove("hidden");
+  projectModal.classList.remove("hidden");
   overlay.classList.remove("hidden");
 };
 
+const openProblemModal = function () {
+    problemModal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+  };
+
 const closeModal = function () {
-  modal.classList.add("hidden");
+  projectModal.classList.add("hidden");
   overlay.classList.add("hidden");
+  problemModal.classList.add("hidden");
 };
 
 btnOpenProjectModal.addEventListener("click", openModal);
+btnOpenProblemModal.addEventListener("click", openProblemModal);
 
-btnCloseModal.addEventListener("click", closeModal);
+for (let i = 0; i < btnCloseModal.length; i++) {
+  btnCloseModal[i].addEventListener("click", closeModal);
+}
 overlay.addEventListener("click", closeModal);
