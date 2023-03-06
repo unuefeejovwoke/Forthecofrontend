@@ -633,9 +633,8 @@
 }
 /*======END OF CONTACT SECTION STYLING=====*/
 
-
 /*======NEWSLETTER SECTION STYLING=====*/
-.newsletter{
+.newsletter {
   padding: 0 24px;
 }
 .newsletter--wrapper {
@@ -646,26 +645,26 @@
   box-shadow: 0px -2px 10px rgba(13, 13, 13, 0.25);
   border-radius: 10px;
   text-align: center;
-  h4{
+  h4 {
     margin-bottom: 12px;
   }
-  p{
+  p {
     max-width: 600px;
     margin: 0 auto 24px;
   }
-  form{
+  form {
     text-align: left;
     position: relative;
     margin-left: auto;
-    .input-field{
+    .input-field {
       margin-top: 12px;
       width: 80%;
     }
-    img{
+    img {
       width: 48px;
       height: auto;
     }
-    button{
+    button {
       position: absolute;
       right: 12%;
       transform: translateY(-46px);
@@ -673,37 +672,36 @@
   }
 }
 
-@media(max-width: 700px){
+@media (max-width: 700px) {
   .newsletter--wrapper {
-    form{
-      button{
+    form {
+      button {
         right: 8%;
       }
     }
   }
 }
 
-@media(max-width: 500px){
+@media (max-width: 500px) {
   .newsletter--wrapper {
-    form{
-      button{
+    form {
+      button {
         right: 4%;
       }
     }
   }
 }
 
-@media(max-width: 400px){
+@media (max-width: 400px) {
   .newsletter--wrapper {
-    form{
-      button{
+    form {
+      button {
         right: 1%;
       }
     }
   }
 }
 /*======NEWSLETTER SECTION STYLING=====*/
-
 
 /*======ADD PROJECT AND PROBLEM PAGES STYLING======*/
 .project_modal--wrapper {
@@ -734,6 +732,21 @@
     margin-top: 12px;
   }
 
+  .project-category {
+    label {
+      display: block;
+      margin: 24px 0 12px;
+    }
+    select {
+      color: $primaryColor;
+      background-color: transparent;
+      // border: 0px;
+    }
+    option {
+      color: $bodyTextColor;
+    }
+  }
+
   .projects-flier {
     display: flex;
     flex-flow: row wrap;
@@ -758,9 +771,14 @@
 
   .add-social-links {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     .link-text {
       font-weight: normal;
+    }
+    h5 {
+      transform: unset;
+      margin-bottom: 12px;
     }
   }
 

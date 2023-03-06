@@ -1418,6 +1418,17 @@ nav .connect #create1:hover {
 .project_modal--wrapper p {
   margin-top: 12px;
 }
+.project_modal--wrapper .project-category label {
+  display: block;
+  margin: 24px 0 12px;
+}
+.project_modal--wrapper .project-category select {
+  color: rgb(29, 181, 89);
+  background-color: transparent;
+}
+.project_modal--wrapper .project-category option {
+  color: rgb(84, 84, 84);
+}
 .project_modal--wrapper .projects-flier {
   display: flex;
   flex-flow: row wrap;
@@ -1440,10 +1451,15 @@ nav .connect #create1:hover {
 }
 .project_modal--wrapper .add-social-links {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .project_modal--wrapper .add-social-links .link-text {
   font-weight: normal;
+}
+.project_modal--wrapper .add-social-links h5 {
+  transform: unset;
+  margin-bottom: 12px;
 }
 .project_modal--wrapper span {
   display: flex;
