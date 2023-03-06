@@ -597,8 +597,12 @@ nav .connect #create1:hover {
 .card-main .heading {
   margin-bottom: 1rem;
 }
-.card-main .heading form {
+.card-main .heading .search {
+  display: flex;
   width: 30%;
+}
+.card-main .heading form {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -724,6 +728,16 @@ nav .connect #create1:hover {
   height: 100%;
 }
 
+#details-heading {
+  justify-content: flex-start;
+}
+#details-heading a {
+  margin: 0 2rem;
+}
+#details-heading h5 {
+  margin: 0 5rem;
+}
+
 .comment-text {
   margin: 1rem 0;
 }
@@ -784,7 +798,7 @@ nav .connect #create1:hover {
   .card-main {
     width: 100%;
   }
-  .heading form {
+  .search {
     width: 40% !important;
   }
   .card-header div span p {
@@ -798,8 +812,8 @@ nav .connect #create1:hover {
   .heading {
     flex-direction: column;
   }
-  .heading form {
-    width: 70% !important;
+  .heading .search {
+    width: 60% !important;
   }
   .text-fix {
     font-size: 0.7rem;
@@ -813,6 +827,10 @@ nav .connect #create1:hover {
   }
   .text-fix2 {
     font-size: 0.5rem;
+  }
+  .filter-btn {
+    display: block !important;
+    margin-left: 0.3rem !important;
   }
 }
 @media only screen and (max-width: 395px) {

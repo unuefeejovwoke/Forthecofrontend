@@ -4,8 +4,12 @@
   .heading {
     margin-bottom: 1rem;
 
-    form {
+    .search{
+      display: flex;
       width: 30%;
+    }
+    form {
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -145,6 +149,17 @@
   }
 }
 
+#details-heading{
+  justify-content: flex-start;
+  a{
+    margin: 0 2rem;
+  }
+  h5{
+    margin: 0 5rem;
+    
+  }
+}
+
 .comment-text{
   margin: 1rem 0;
 }
@@ -219,7 +234,7 @@
     width: 100%;
   }
 
-  .heading form {
+  .search {
     width: 40% !important;
   }
 
@@ -236,8 +251,8 @@
   .heading {
     flex-direction: column;
 
-    form {
-      width: 70% !important;
+    .search {
+      width: 60% !important;
     }
   }
 
@@ -255,6 +270,11 @@
 
 .text-fix2 {
   font-size: 0.5rem;
+}
+
+.filter-btn{
+  display: block !important;
+  margin-left: 0.3rem !important;
 }
 }
 
