@@ -173,8 +173,8 @@ textarea {
 
 .form {
   border-radius: 0.8rem;
-  background: #F9FFFB;
-  border-top: 4px solid #32D272;
+  background: #f9fffb;
+  border-top: 4px solid #32d272;
   box-shadow: -19px 376px 150px rgba(0, 0, 0, 0.01), -10px 211px 127px rgba(0, 0, 0, 0.03), -5px 94px 94px rgba(0, 0, 0, 0.04), -1px 23px 52px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -197,13 +197,13 @@ textarea {
 .form-switch button {
   padding: 0.5rem;
   width: 35%;
-  background-color: #E8FBEE;
+  background-color: #e8fbee;
   border-radius: 0.5rem;
   margin: 0.5rem 0;
   font-family: "Nunito Sans", sans-serif;
 }
 .form-switch .active {
-  background-color: #32D272;
+  background-color: #32d272;
   transition: background-color 1.5s;
 }
 
@@ -217,25 +217,33 @@ textarea {
   padding: 0.5rem;
   border-radius: 0.3rem;
   background-color: white;
-  border: 1px solid #32D272;
+  border: 1px solid #32d272;
 }
 
 .form-variables {
   width: 100% !important;
   transition: display 2s;
+  position: relative;
 }
 .form-variables form {
   margin: 1.5rem 0;
 }
 .form-variables a {
-  color: #32D272;
+  color: #32d272;
   font-size: 0.9rem;
+}
+.form-variables .pswd-reveal--toggle {
+  position: absolute;
+  right: 2%;
+  transform: translateY(-40px);
+  cursor: pointer;
+  padding: 2px;
 }
 
 .var-input {
   display: flex;
   width: 100% !important;
-  background-color: #E8FBEE;
+  background-color: #e8fbee;
   border-radius: 0.8rem;
   padding: 0.6rem;
   margin-bottom: 0.5rem;
@@ -261,7 +269,7 @@ textarea {
   padding: 0.5rem;
   margin: 1rem 0;
   border-radius: 0.5rem;
-  background-color: #32D272;
+  background-color: #32d272;
   color: white;
   font-family: "Nunito Sans", sans-serif;
 }
@@ -301,7 +309,7 @@ textarea {
   .form {
     width: 100% !important;
     border-radius: 0;
-    background: #F9FFFB;
+    background: #f9fffb;
     border-top: 0;
     box-shadow: none;
   }
