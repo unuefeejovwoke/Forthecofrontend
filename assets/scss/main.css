@@ -538,6 +538,9 @@ nav .connect #create1:hover {
   border: 0;
   background: transparent;
 }
+.cat-wrapper form input:focus {
+  outline: none;
+}
 .cat-wrapper form button {
   border: 0;
   background: transparent;
@@ -619,6 +622,9 @@ nav .connect #create1:hover {
 .card-main .heading .search {
   display: flex;
   width: 30%;
+}
+.card-main .heading .search input:focus {
+  outline: none;
 }
 .card-main .heading form {
   width: 100%;
