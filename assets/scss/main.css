@@ -834,6 +834,12 @@ nav .connect #create1:hover {
   .heading .search {
     width: 60% !important;
   }
+  #details-heading {
+    flex-direction: row;
+  }
+  #details-heading h5 {
+    margin: 0 3rem;
+  }
   .text-fix {
     font-size: 0.7rem;
   }
