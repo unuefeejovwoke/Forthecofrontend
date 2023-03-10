@@ -15,7 +15,7 @@
 	</head>
 
 	<body>
-		<div class="body-wrapper">
+		<div class="body-wrapper problem--profile">
 			<nav>
 				<div class="logo">
 					<img src="/assets/images/notification/logo 3(1).png" alt="Eco logo" />
@@ -47,7 +47,7 @@
 			</nav>
 			<section class="heading">
 				<div class="search">
-					<form>
+					<form class="">
 						<input type="text" name="" id="" placeholder="Search" />
 						<button>
 							<img
@@ -56,9 +56,6 @@
 							/>
 						</button>
 					</form>
-					<!-- <button class="filter-btn d-none">
-						<img src="assets/images/filter-square.png" alt="filter button" />
-					</button> -->
 				</div>
 			</section>
 			<section class="main-content">
@@ -95,62 +92,34 @@
 					<a href="#" class="link-text">change password</a>
 					<a href="#" class="logout-btn">Log Out</a>
 				</aside>
-				<main class="card-main">
-					<aside class="mob-cat" id="">
-						<div class="cat-wrapper">
-							<h5>Category</h5>
-							<div class="radio">
-								<div>
-									<label for="All">All</label>
-									<input type="radio" name="category" id="All" checked />
-								</div>
-								<div>
-									<label for="Environment">Environment</label>
-									<input type="radio" name="category" id="Environment" />
-								</div>
-
-								<div>
-									<label for="Community">Community</label>
-									<input type="radio" name="category" id="Community" />
-								</div>
-
-								<div>
-									<label for="Organisation">Organisation</label>
-									<input type="radio" name="category" id="Organisation" />
-								</div>
-							</div>
-							<h5>Based on location</h5>
-							<form>
-								<input
-									type="text"
-									name=""
-									id=""
-									placeholder="Enter search location.."
-								/>
-								<button>
-									<img
-										src="assets/images/category/search.png"
-										alt="search button"
-									/>
-								</button>
-							</form>
-							<h5>Based on host</h5>
-							<form>
-								<input
-									type="text"
-									name=""
-									id=""
-									placeholder="Search host name.."
-								/>
-								<button>
-									<img
-										src="assets/images/category/search.png"
-										alt="search button"
-									/>
-								</button>
-							</form>
+				<main class="card-main form">
+					<section class="profile--nav">
+						<a href="#" class="profile--nav-link">problems</a>
+						<a href="#" class="profile--nav-link">projects</a>
+						<a href="#" class="profile--nav-link">ideas</a>
+					</section>
+					<section class="stats">
+						<h5>Problems posted <span id="problem-count">(20)</span></h5>
+						<div class="stats--wrapper">
+							<span class="stats--com">70%</span>
+							<span class="stats--org">20%</span>
+							<span class="stats--env">10%</span>
 						</div>
-					</aside>
+						<div class="stats--legend">
+							<div class="legend--wrapper">
+								<div class="legend--item env"></div>
+								<span class="legend-label">environment</span>
+							</div>
+							<div class="legend--wrapper">
+								<div class="legend--item com"></div>
+								<span class="legend-label">community</span>
+							</div>
+							<div class="legend--wrapper">
+								<div class="legend--item org"></div>
+								<span class="legend-label">organization</span>
+							</div>
+						</div>
+					</section>
 
 					<div class="card">
 						<div class="card-wrapper">
@@ -339,7 +308,7 @@
 						</div>
 					</div>
 				</main>
-				<aside class="category"></aside>
+				<aside class="sidebar form"></aside>
 			</section>
 		</div>
 	</body>
