@@ -27,8 +27,8 @@ nav {
 
   .right-side__nav {
     display: flex;
-    // justify-content: space-around;
-    gap: 100px;
+    justify-content: space-between;
+    width: 70%;
     align-items: center;
   }
 
@@ -99,10 +99,13 @@ nav {
   }
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1030px) {
   nav {
+    .right-side__nav{
+      width: 75%;
+    }
     .connect {
-      padding: 12px 0;
+      padding: 12px 6px;
     }
   }
 }
@@ -146,7 +149,7 @@ nav {
 //   }
 // }
 
-@media (max-width: 700px) {
+@media (max-width: 842px) {
   nav {
     flex-direction: column;
     .logo {
@@ -164,6 +167,7 @@ nav {
       flex-direction: column;
       transition: 0.2s all ease-in;
       gap: 48px;
+      width: unset;
     //   height: 100%;
     }
     .menu {
