@@ -434,6 +434,7 @@ nav .dropbtn:hover .dropdown-content {
   display: block;
 }
 nav .connect {
+  width: 30%;
   background: #f9fffb;
   padding: 1.5rem 12px;
   margin-left: auto;
