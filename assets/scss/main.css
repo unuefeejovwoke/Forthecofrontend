@@ -400,7 +400,8 @@ nav .logo img {
 }
 nav .right-side__nav {
   display: flex;
-  gap: 100px;
+  justify-content: space-between;
+  width: 70%;
   align-items: center;
 }
 nav .nav-links {
@@ -468,9 +469,12 @@ nav .connect #create1:hover {
   transition: 0.5s;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1030px) {
+  nav .right-side__nav {
+    width: 75%;
+  }
   nav .connect {
-    padding: 12px 0;
+    padding: 12px 6px;
   }
 }
 @media only screen and (max-width: 770px) {
@@ -484,7 +488,7 @@ nav .connect #create1:hover {
     padding: 0.8rem 0;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 842px) {
   nav {
     flex-direction: column;
   }
@@ -502,6 +506,7 @@ nav .connect #create1:hover {
     flex-direction: column;
     transition: 0.2s all ease-in;
     gap: 48px;
+    width: unset;
   }
   nav .menu {
     display: block;
