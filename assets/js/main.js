@@ -8,26 +8,26 @@ const navbarReveal = function(){
 
 navToggle.addEventListener('click', navbarReveal);
 //nav-dropdown
-// const dropBtn = document.querySelector(".dropbtn")
-// const dropContent = document.querySelector(".dropdown-content")
+const dropBtn = document.querySelector(".dropbtn")
+const dropContent = document.querySelector(".dropdown-content")
 
-// dropBtn.addEventListener("click", (e)=>{
-//   if(e.target === dropBtn){
-//     dropContent.classList.remove("d-none");
-//   dropContent.classList.add("d-show")
-//   }else{
-//     dropContent.add("d-none")
-//   }
+dropBtn.addEventListener("click", (e)=>{
+  if(e.target === dropBtn){
+    dropContent.classList.remove("d-none");
+  dropContent.classList.add("d-show")
+  }else{
+    dropContent.add("d-none")
+  }
 
-//   console.log("clicked dropdown")
-// });
-// window.onclick = function(e){
-//   if (!e.target.matches('.dropbtn') && 
-//         dropContent.classList.contains('d-show')){
-//       dropContent.classList.remove('d-show');
-//       dropContent.classList.add("d-none");
-//  }
-// }
+  console.log("clicked dropdown")
+});
+window.onclick = function(e){
+  if (!e.target.matches('.dropbtn') && 
+        dropContent.classList.contains('d-show')){
+      dropContent.classList.remove('d-show');
+      dropContent.classList.add("d-none")
+ }
+}
 
 ("use strict");
 
