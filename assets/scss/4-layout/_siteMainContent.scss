@@ -225,6 +225,9 @@
     p {
       margin-bottom: 24px;
     }
+    .btn{
+      background-color: $secondaryColor;
+    }
   }
 }
 
@@ -232,6 +235,12 @@
   .developer-circle {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
       url("../images/innovation-map-bg.png") no-repeat, center;
+
+      .circle--wrapper {
+        p{
+          max-width: 200px;
+        }
+      }
   }
 }
 
@@ -299,12 +308,14 @@
       background-color: #fff;
       border-radius: 8px;
       padding: 24px;
+      transform: translateY(100px);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     }
     h5 {
       margin-bottom: 12px;
     }
     .input-field {
-      width: 70%;
+      width: 100%;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z' fill='rgba(148,148,148,1)'/%3E%3C/svg%3E");
       background-position: 1%;
       background-repeat: no-repeat;
@@ -316,7 +327,8 @@
 @media (max-width: 850px) {
   .coming-soon__app {
     margin: 96px auto;
-    flex-direction: column-reverse;
+    margin-bottom: 500px;
+    flex-direction: column;
     justify-content: center;
     height: auto;
 
@@ -327,8 +339,10 @@
       display: flex;
       gap: 12px;
       align-items: center;
-      position: static;
-      transform: translateY(60px);
+      position: absolute;
+      top: 70%;
+      // position: static;
+      // transform: translateY(60px);
     }
     .img-abs-position {
       flex-flow: row wrap;
@@ -336,6 +350,9 @@
 
     .text-description {
       width: 80%;
+      form{
+        transform: translateY(400%);
+      }
     }
   }
 }
@@ -365,6 +382,36 @@
       width: 100%;
       .input-field {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media(max-width: 500px){
+  .coming-soon__app {
+    margin-bottom: 100%;
+    .img-group {
+      top: 50%;
+    }
+
+    .text-description {
+      form{
+        transform: translateY(300%);
+      }
+    }
+  }
+}
+
+@media(max-width: 390px){
+  .coming-soon__app {
+    margin-bottom: 100%;
+    .img-group {
+      top: 50%;
+    }
+
+    .text-description {
+      form{
+        transform: translateY(200%);
       }
     }
   }
@@ -491,11 +538,14 @@
   display: flex;
   gap: 24px;
   align-items: center;
+  justify-content: space-around;
   background: linear-gradient(91.56deg, #f5f7fa 0.55%, #b8c6db 98.03%);
   padding: 24px;
 
   .img-description {
     width: 40%;
+    display: flex;
+    justify-content: center;
     img {
       width: 50%;
     }
@@ -503,6 +553,7 @@
 
   .text-description {
     width: 60%;
+    transform: translateX(-40px);
     p {
       margin-bottom: 24px;
     }
@@ -530,6 +581,7 @@
     .img-description,
     .text-description {
       width: 80%;
+      transform: translateX(0);
     }
 
     .img-description {
@@ -558,10 +610,10 @@
   background: url("../images/Tech-4-good-bg.png") no-repeat, center;
   background-size: cover;
   .lhs-description {
-    width: 50%;
+    width: 30%;
   }
   .rhs-description {
-    width: 50%;
+    width: 70%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     gap: 24px;
@@ -726,6 +778,7 @@
 /*======NEWSLETTER SECTION STYLING=====*/
 .newsletter {
   padding: 0 24px;
+  transform: translateY(50%);
 }
 .newsletter--wrapper {
   max-width: 800px;
@@ -749,6 +802,10 @@
     .input-field {
       margin-top: 12px;
       width: 80%;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z' fill='rgba(148,148,148,1)'/%3E%3C/svg%3E");
+      background-position: 1%;
+      background-repeat: no-repeat;
+      padding-left: 32px;
     }
     img {
       width: 48px;
@@ -760,6 +817,11 @@
       transform: translateY(-46px);
     }
   }
+}
+
+.extra--bg {
+  background: rgb(38, 50, 56);
+  height: 100px;
 }
 
 @media (max-width: 700px) {
@@ -928,8 +990,6 @@
       img {
         width: 60px;
       }
-
-      
     }
   }
 }
