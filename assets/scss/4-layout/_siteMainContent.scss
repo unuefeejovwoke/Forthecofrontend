@@ -845,6 +845,28 @@
     img {
       width: 96px;
       height: auto;
+      border-radius: 8px;
+    }
+    .data {
+      display: none;
+    }
+
+    .input-hidden {
+      display: none;
+    }
+
+    input[type="radio"]:checked + label > img {
+      border: 3px solid $secondaryColor;
+      border-radius: 8px;
+      transition: 0.3s ease-in-out;
+      padding: 2px;
+      /* box-shadow: 0 0 3px 3px #090; */
+    }
+
+    /* Stuff after this is only to make things more pretty */
+    input[type="radio"] + label > img {
+      transform: scale(1);
+      transition: 1s ease-in-out;
     }
   }
 
@@ -906,6 +928,8 @@
       img {
         width: 60px;
       }
+
+      
     }
   }
 }
