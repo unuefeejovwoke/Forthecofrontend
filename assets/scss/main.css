@@ -2140,6 +2140,50 @@ nav .connect #create1:hover {
     flex-direction: column;
   }
 }
+.profile-ideas--container {
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+}
+.profile-ideas--container .ideas-heading {
+  margin-left: 1rem;
+  font-size: 0.8rem;
+}
+.profile-ideas--container .card {
+  background-color: #f1faf4;
+  border-radius: 1rem;
+}
+.profile-ideas--container .card-header {
+  justify-content: flex-start;
+}
+.profile-ideas--container .card-header--item {
+  font-size: 0.8rem;
+}
+.profile-ideas--container .card .post__user--img {
+  width: 2rem;
+}
+.profile-ideas--container .card .post__user--name {
+  font-size: 1rem;
+  margin-inline: 0.5rem 1rem;
+  font-weight: 600;
+}
+.profile-ideas--container .card .post-date {
+  color: rgba(44, 44, 44, 0.5);
+}
+@media screen and (max-width: 650px) {
+  .profile-ideas .card-header--item {
+    flex-direction: row;
+  }
+  .profile-ideas .card .post__user--img {
+    display: inline-block;
+  }
+  .profile-ideas .card .post__user--name {
+    margin-inline: 0;
+  }
+}
+
 /*======FOOTER SECTION STYLING=====*/
 footer {
   position: relative;
