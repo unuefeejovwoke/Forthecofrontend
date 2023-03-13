@@ -1235,7 +1235,8 @@ nav .connect #create1:hover {
     height: auto;
   }
   .coming-soon__app .img-group {
-    transform: translateY(60px);
+    transform: translate(-10px, 60px);
+    gap: unset;
   }
   .coming-soon__app .img-abs-position {
     display: inline;
