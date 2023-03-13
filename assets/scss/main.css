@@ -965,6 +965,7 @@ nav .connect #create1:hover {
   box-shadow: 12px 12px 16px rgba(13, 13, 13, 0.25);
   border-radius: 8px;
   padding: 12px;
+  height: 400px;
 }
 .problem--card hr {
   width: 100%;
@@ -1023,6 +1024,9 @@ nav .connect #create1:hover {
   gap: 12px;
   margin-top: 24px;
 }
+.problem--card .img--container img.item1 {
+  height: 180px;
+}
 .problem--card .img--container .img-item {
   width: 100%;
   height: auto;
@@ -1033,6 +1037,9 @@ nav .connect #create1:hover {
 }
 .problem--card .img-group .item2 {
   margin-bottom: 12px;
+}
+.problem--card .img-group .item2, .problem--card .img-group .item3 {
+  height: 80px;
 }
 
 .cta-buttons {
@@ -1077,6 +1084,15 @@ nav .connect #create1:hover {
 @media (max-width: 450px) {
   .hero-section {
     background-size: 150%;
+  }
+  .problem--card {
+    padding: unset;
+  }
+  .problem--card .project--info {
+    gap: 6px;
+  }
+  .problem--card .project--info .location--display .category-tag {
+    transform: none;
   }
 }
 /*======END OF HERO SECTION STYLING=====*/

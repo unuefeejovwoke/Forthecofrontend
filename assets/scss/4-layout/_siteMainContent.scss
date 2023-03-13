@@ -73,6 +73,7 @@
     box-shadow: 12px 12px 16px rgba(13, 13, 13, 0.25);
     border-radius: 8px;
     padding: 12px;
+    height: 400px;
   }
   hr {
     width: 100%;
@@ -132,6 +133,9 @@
     display: flex;
     gap: 12px;
     margin-top: 24px;
+    img.item1{
+      height: 180px;
+    }
     .img-item {
       width: 100%;
       height: auto;
@@ -142,8 +146,12 @@
     .img-item {
       height: 100px;
     }
+    
     .item2 {
       margin-bottom: 12px;
+    }
+    .item2, .item3{
+      height: 80px;
     }
   }
 }
@@ -196,6 +204,18 @@
 @media (max-width: 450px) {
   .hero-section {
     background-size: 150%;
+
+  }
+  .problem--card{
+    padding: unset;
+    .project--info{
+      gap: 6px;
+      .location--display{
+        .category-tag{
+          transform: none;
+        }
+      }
+    }
   }
 }
 /*======END OF HERO SECTION STYLING=====*/
