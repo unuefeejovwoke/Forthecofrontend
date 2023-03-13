@@ -1004,6 +1004,53 @@ nav .connect #create1:hover {
   display: inline-block;
 }
 
+@media screen and (max-width: 650px) {
+  .profile {
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    position: static;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid rgb(29, 181, 89);
+    border-radius: 0.8rem 0.8rem 0rem 0rem;
+  }
+  .profile .link-text,
+  .profile .logout-btn {
+    display: none;
+  }
+  .profile--card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    box-shadow: none;
+    border: unset;
+    border-radius: 0;
+    position: relative;
+  }
+  .profile--img {
+    width: 40%;
+  }
+  .profile .user-mobile {
+    margin: 0.5rem;
+  }
+  .profile .user-contact {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .profile .edit-profile {
+    font-size: 0.8em;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+  }
+  .profile .ambassador-btn {
+    width: 60%;
+    font-size: 1em;
+    margin-inline: auto;
+  }
+}
 .main-content {
   display: flex;
   justify-content: space-between;
@@ -1844,7 +1891,7 @@ nav .connect #create1:hover {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 1rem;
   border-bottom: 2px solid rgba(84, 84, 84, 0.2);
 }
@@ -1854,9 +1901,12 @@ nav .connect #create1:hover {
   display: inline-block;
   margin-right: 1rem;
 }
-.problem--profile .profile--nav-link:active {
+.problem--profile .profile--nav .active {
   color: rgb(4, 30, 14);
-  font-weight: bold;
+  font-weight: 600;
+}
+.problem--profile .search-btn {
+  display: none;
 }
 
 /*======PROFILE STATS STYLING======*/
@@ -1865,12 +1915,16 @@ nav .connect #create1:hover {
   padding: 1rem;
   border-bottom: 2px solid rgba(84, 84, 84, 0.2);
 }
+.stats-heading {
+  font-weight: 600;
+}
 .stats--wrapper {
   width: 100%;
   height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .stats--com {
   width: 70%;
@@ -1879,7 +1933,6 @@ nav .connect #create1:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 2rem;
 }
 .stats--org {
   width: 20%;
@@ -1888,8 +1941,6 @@ nav .connect #create1:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 2rem;
-  margin-left: -1rem;
 }
 .stats--env {
   width: 10%;
@@ -1898,10 +1949,168 @@ nav .connect #create1:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 2rem;
-  margin-left: -1rem;
+}
+.stats--legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem;
+  max-width: 100%;
+}
+.stats .legend--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 0.5rem;
+  text-transform: capitalize;
+}
+.stats .legend--item {
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.stats .env {
+  background-color: rgb(29, 181, 89);
+}
+.stats .com {
+  background-color: rgb(46, 162, 207);
+}
+.stats .org {
+  background-color: rgb(246, 114, 24);
 }
 
+.card {
+  font-size: 0.8em;
+}
+.card-header {
+  font-size: 0.67em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.card-header--item {
+  margin-right: 1.5px;
+}
+.card-header .location-icon {
+  height: 0.5rem;
+  margin-right: 1.5px;
+  display: inline-block;
+}
+.card-header .category-tag {
+  color: rgb(46, 162, 207);
+}
+.card .post__user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.card .post__user--img {
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: contain;
+  -o-object-fit: contain;
+}
+.card .post__user--name {
+  text-transform: capitalize;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-footer .primary-btn {
+  width: 40%;
+  background-color: rgb(29, 181, 89);
+  padding: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.card-footer .primary-btn:hover {
+  border-radius: 2rem;
+}
+.card-footer .secondary-btn {
+  border: 2px solid rgb(29, 181, 89);
+  border-radius: 0.5rem;
+  width: 40%;
+  text-align: center;
+  padding: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.card-footer .secondary-btn:hover {
+  background-color: rgb(29, 181, 89);
+  color: white;
+}
+.card-footer .danger-btn {
+  background-color: red;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+.card-footer .trash-icon {
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+  object-position: center;
+  -o-object-position: center;
+}
+
+@media screen and (max-width: 650px) {
+  .problem--profile .heading {
+    display: none;
+  }
+  .problem--profile .profile--nav {
+    justify-content: space-between;
+  }
+  .problem--profile .search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(29, 181, 89);
+  }
+  .problem--profile .search-btn .search-img {
+    width: 1rem;
+  }
+  .problem--profile .main-content {
+    flex-direction: column;
+  }
+  .problem--profile .legend--item {
+    width: 1rem;
+    margin-right: 0.5rem;
+  }
+  .problem--profile .card-main {
+    width: 100%;
+    margin-inline: auto;
+  }
+  .problem--profile .card-header--item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0.5rem;
+  }
+  .problem--profile .card-header--item .text-fix {
+    font-size: 0.65rem;
+  }
+  .problem--profile .card-header--item .icon {
+    width: 1rem;
+  }
+  .problem--profile .card-header .goal {
+    width: 30%;
+  }
+  .problem--profile .card .post__user--img {
+    display: none;
+  }
+  .problem--profile .card .location-icon {
+    height: 1rem;
+  }
+  .problem--profile .sidebar {
+    display: none;
+  }
+}
 /*======FOOTER SECTION STYLING=====*/
 footer {
   position: relative;

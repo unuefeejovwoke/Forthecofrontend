@@ -102,3 +102,59 @@
 	font-weight: bold;
 	display: inline-block;
 }
+
+// ===================== MEDIA QUERIES ==========================
+@media screen and (max-width: 650px) {
+	.profile {
+		width: 90%;
+		height: auto;
+		margin: 2rem auto;
+		position: static;
+		box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.08);
+		border-top: 4px solid $primaryColor;
+		border-radius: 0.8rem 0.8rem 0rem 0rem;
+
+		.link-text,
+		.logout-btn {
+			display: none;
+		}
+
+		&--card {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: flex-end;
+			box-shadow: none;
+			border: unset;
+			border-radius: 0;
+			position: relative;
+		}
+
+		&--img {
+			width: 40%;
+		}
+
+		.user-mobile {
+			margin: 0.5rem;
+		}
+
+		.user-contact {
+			display: flex;
+			align-items: center;
+			justify-content: start;
+		}
+
+		.edit-profile {
+			font-size: 0.8em;
+			position: absolute;
+			top: 2rem;
+			right: 0;
+		}
+
+		.ambassador-btn {
+			width: 60%;
+			font-size: 1em;
+			margin-inline: auto;
+		}
+	}
+}

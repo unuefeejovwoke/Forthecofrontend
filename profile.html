@@ -63,13 +63,18 @@
 					<div class="profile--card">
 						<img
 							class="profile--img"
-							src="/assets/images/demo-img-1.png"
+							src="/assets/images/avatar-img.svg"
 							alt="user profile image"
 						/>
-						<h4 class="username">michael thomas</h4>
-						<p class="user-role">community ambassador</p>
-						<p class="user-email">samplemail@email.com</p>
-						<p class="user-mobile">+234 (0) 465 9834 324</p>
+						<div class="user--info">
+							<h4 class="username" id="name">michael thomas</h4>
+
+							<p class="user-role" id="role">community ambassador</p>
+						</div>
+						<div class="user-contact">
+							<p class="user-email" id="email">samplemail@email.com</p>
+							<p class="user-mobile" id="mobile">+234 (0) 465 9834 324</p>
+						</div>
 						<a href="#" class="edit-profile">
 							<img
 								src="/assets/icons/edit.svg"
@@ -89,17 +94,29 @@
 						/>
 						<span>Become an ambassador</span>
 					</button>
-					<a href="#" class="link-text">change password</a>
-					<a href="#" class="logout-btn">Log Out</a>
+					<div class="account-action">
+						<a href="#" class="link-text">change password</a>
+						<a href="#" class="logout-btn">Log Out</a>
+					</div>
 				</aside>
 				<main class="card-main form">
 					<section class="profile--nav">
-						<a href="#" class="profile--nav-link">problems</a>
+						<a href="#" class="profile--nav-link active">problems</a>
 						<a href="#" class="profile--nav-link">projects</a>
 						<a href="#" class="profile--nav-link">ideas</a>
+
+						<button class="profile--nav-link search-btn">
+							<img
+								class="search-icon"
+								src="assets/images/category/search.png"
+								alt="search button"
+							/>
+						</button>
 					</section>
 					<section class="stats">
-						<h5>Problems posted <span id="problem-count">(20)</span></h5>
+						<h5 class="stats-heading">
+							Problems posted <span id="problem-count">(20)</span>
+						</h5>
 						<div class="stats--wrapper">
 							<span class="stats--com">70%</span>
 							<span class="stats--org">20%</span>
@@ -124,20 +141,29 @@
 					<div class="card">
 						<div class="card-wrapper">
 							<div class="card-header">
-								<div class="post-location">
-									<img src="assets/images/card/Pindrop.png" alt="" /><span
-										class="text-fix"
-										>Ikeja,Lagos</span
-									>
+								<div class="post__user card-header--item">
+									<img
+										src="/assets/images/avatar.png"
+										alt="user image"
+										class="post__user--img"
+									/>
+									<p class="post__user--name">Gbenro Adams</p>
 								</div>
-								<div class="eco-cat">
+								<div class="post-location card-header--item">
+									<img
+										class="location-icon"
+										src="assets/images/card/Pindrop.png"
+										alt=""
+									/><span class="text-fix">Ikeja,Lagos</span>
+								</div>
+								<div class="eco-cat card-header--item">
 									<p class="text-fix">
-										Eco Community: <a href="">Community</a>
+										Eco Category: <a class="category-tag" href="">Community</a>
 									</p>
 								</div>
-								<div class="goal">
+								<div class="goal card-header--item">
 									<p class="text-fix">UNSdg Goal:</p>
-									<img src="assets/images/card/eco.png" alt="" />
+									<img class="icon" src="assets/images/card/eco.png" alt="" />
 								</div>
 							</div>
 							<hr />
@@ -151,55 +177,50 @@
 									voluptates quibusdam at veritatis iure. Dolorem maxime fugiat
 									omnis dolorum excepturi quaerat itaque facilis tempora natus!
 								</p>
-								<div class="detail-img">
-									<img
-										src="assets/images/card/Rectangle 574(1).png"
-										alt=""
-										class="first"
-									/>
-									<div class="second">
-										<img src="assets/images/card/lake.png" alt="" />
-										<img src="assets/images/card/waterbottle.png" alt="" />
-									</div>
-								</div>
 							</div>
 							<div class="card-footer">
-								<button class="up-count">
-									<img src="assets/images/card/upvote.png" alt="" />
-									<span>1,354</span>
-								</button>
-								<button class="down-count">
-									<img src="assets/images/card/downvote.png" alt="" />
-									<span>456</span>
-								</button>
-								<button class="idea-count">
-									<img src="assets/images/card/idea.png" alt="" />
-									<span>456</span>
-								</button>
-
-								<a href="details-page.html" class="card-link">
+								<a href="details-page.html" class="card-link primary-btn">
 									Link to problem
 								</a>
+								<a href="details-page.html" class="secondary-btn">
+									Edit problem
+								</a>
+								<button type="button" class="danger-btn">
+									<img
+										src="/assets/icons/trash.svg"
+										alt="delete problem"
+										class="trash-icon"
+									/>
+								</button>
 							</div>
 						</div>
 					</div>
 					<div class="card">
 						<div class="card-wrapper">
 							<div class="card-header">
-								<div class="post-location">
-									<img src="assets/images/card/Pindrop.png" alt="" /><span
-										class="text-fix"
-										>Ikeja,Lagos</span
-									>
+								<div class="post__user card-header--item">
+									<img
+										src="/assets/images/avatar.png"
+										alt="user image"
+										class="post__user--img"
+									/>
+									<p class="post__user--name">Gbenro Adams</p>
 								</div>
-								<div class="eco-cat">
+								<div class="post-location card-header--item">
+									<img
+										class="location-icon"
+										src="assets/images/card/Pindrop.png"
+										alt=""
+									/><span class="text-fix">Ikeja,Lagos</span>
+								</div>
+								<div class="eco-cat card-header--item">
 									<p class="text-fix">
-										Eco Community: <a href="">Community</a>
+										Eco Category: <a class="category-tag" href="">Community</a>
 									</p>
 								</div>
-								<div class="goal">
+								<div class="goal card-header--item">
 									<p class="text-fix">UNSdg Goal:</p>
-									<img src="assets/images/card/eco.png" alt="" />
+									<img class="icon" src="assets/images/card/eco.png" alt="" />
 								</div>
 							</div>
 							<hr />
@@ -213,97 +234,21 @@
 									voluptates quibusdam at veritatis iure. Dolorem maxime fugiat
 									omnis dolorum excepturi quaerat itaque facilis tempora natus!
 								</p>
-								<div class="detail-img">
-									<img
-										src="assets/images/card/Rectangle 574(1).png"
-										alt=""
-										class="first"
-									/>
-									<div class="second">
-										<img src="assets/images/card/lake.png" alt="" />
-										<img src="assets/images/card/waterbottle.png" alt="" />
-									</div>
-								</div>
 							</div>
 							<div class="card-footer">
-								<button class="up-count">
-									<img src="assets/images/card/upvote.png" alt="" />
-									<span>1,354</span>
-								</button>
-								<button class="down-count">
-									<img src="assets/images/card/downvote.png" alt="" />
-									<span>456</span>
-								</button>
-								<button class="idea-count">
-									<img src="assets/images/card/idea.png" alt="" />
-									<span>456</span>
-								</button>
-
-								<a href="details-page.html" class="card-link">
+								<a href="details-page.html" class="card-link primary-btn">
 									Link to problem
 								</a>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-wrapper">
-							<div class="card-header">
-								<div class="post-location">
-									<img src="assets/images/card/Pindrop.png" alt="" /><span
-										class="text-fix"
-										>Ikeja,Lagos</span
-									>
-								</div>
-								<div class="eco-cat">
-									<p class="text-fix">
-										Eco Community: <a href="">Community</a>
-									</p>
-								</div>
-								<div class="goal">
-									<p class="text-fix">UNSdg Goal:</p>
-									<img src="assets/images/card/eco.png" alt="" />
-								</div>
-							</div>
-							<hr />
-							<div class="card-details">
-								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-									minus delectus aliquam optio sunt ab. Explicabo magnam natus,
-									eius officia et perferendis, aperiam molestiae libero numquam
-									maxime ab dolorum hic. Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Molestias odit obcaecati libero ex rerum
-									voluptates quibusdam at veritatis iure. Dolorem maxime fugiat
-									omnis dolorum excepturi quaerat itaque facilis tempora natus!
-								</p>
-								<div class="detail-img">
+								<a href="details-page.html" class="secondary-btn">
+									Edit problem
+								</a>
+								<button type="button" class="danger-btn">
 									<img
-										src="assets/images/card/Rectangle 574(1).png"
-										alt=""
-										class="first"
+										src="/assets/icons/trash.svg"
+										alt="delete problem"
+										class="trash-icon"
 									/>
-									<div class="second">
-										<img src="assets/images/card/lake.png" alt="" />
-										<img src="assets/images/card/waterbottle.png" alt="" />
-									</div>
-								</div>
-							</div>
-							<div class="card-footer">
-								<button class="up-count">
-									<img src="assets/images/card/upvote.png" alt="" />
-									<span>1,354</span>
 								</button>
-								<button class="down-count">
-									<img src="assets/images/card/downvote.png" alt="" />
-									<span>456</span>
-								</button>
-								<button class="idea-count">
-									<img src="assets/images/card/idea.png" alt="" />
-									<span>456</span>
-								</button>
-
-								<a href="details-page.html" class="card-link">
-									Link to problem
-								</a>
 							</div>
 						</div>
 					</div>
