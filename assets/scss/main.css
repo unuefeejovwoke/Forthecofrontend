@@ -1884,7 +1884,7 @@ nav .connect #create1:hover {
 .problem--profile .card-main {
   width: 50%;
   margin-top: 0;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.08);
 }
 .problem--profile .profile--nav {
@@ -2109,6 +2109,35 @@ nav .connect #create1:hover {
   }
   .problem--profile .sidebar {
     display: none;
+  }
+}
+.profile-projects .card-share {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+.profile-projects .card-share--txt {
+  width: -moz-max-content;
+  width: max-content;
+}
+.profile-projects .card-share--img {
+  width: 1.2rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.profile-projects .card-share--img:hover {
+  scale: 1.2;
+}
+
+@media screen and (max-width: 650px) {
+  .profile-projects .post__user--name {
+    font-size: 0.6rem;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .profile-projects .card-share {
+    flex-direction: column;
   }
 }
 /*======FOOTER SECTION STYLING=====*/
