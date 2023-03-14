@@ -444,6 +444,8 @@ nav .menu {
 }
 nav .dropdown-content {
   position: absolute;
+  bottom: -3.5rem;
+  left: 10 rem;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -454,10 +456,11 @@ nav .dropdown-content a {
   display: block;
   text-align: left;
 }
-nav .dropbtn:hover .dropdown-content {
-  display: block;
+nav .dropdown:hover > .dropdown-content {
+  display: initial;
 }
 nav .connect {
+  width: 30%;
   background: #f9fffb;
   padding: 1.5rem 12px;
   margin-left: auto;
@@ -541,6 +544,13 @@ nav .connect #create1:hover {
     transform: translate(-12px, 24px);
     position: absolute;
   }
+  nav .dropdown-content {
+    top: 2rem;
+    bottom: 0;
+    left: 7rem;
+    max-height: 28%;
+    width: 25%;
+  }
   nav .nav-links {
     display: flex;
     flex-direction: column;
@@ -571,7 +581,7 @@ nav .connect #create1:hover {
 .cat-wrapper h5 {
   font-size: 1.125em;
 }
-.cat-wrapper form {
+.cat-wrapper .cat-search {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -581,20 +591,20 @@ nav .connect #create1:hover {
   border-radius: 0.3rem;
   margin: 0.5rem 0;
 }
-.cat-wrapper form input {
+.cat-wrapper .cat-search input {
   border: 0;
   background: transparent;
 }
-.cat-wrapper form input:focus {
+.cat-wrapper .cat-search input:focus {
   outline: none;
 }
-.cat-wrapper form button {
+.cat-wrapper .cat-search button {
   border: 0;
   background: transparent;
   background-color: rgb(46, 162, 207);
   padding: 0.2rem;
 }
-.cat-wrapper form button img {
+.cat-wrapper .cat-search button img {
   width: 70%;
 }
 
@@ -626,11 +636,8 @@ nav .connect #create1:hover {
   .cat-wrapper h5 {
     font-size: 0.9rem;
   }
-  .cat-wrapper form input {
+  .cat-search input {
     width: 65%;
-  }
-  .cat-wrapper form button imgitg {
-    width: 40%;
   }
 }
 @media only screen and (max-width: 770px) {
@@ -640,10 +647,10 @@ nav .connect #create1:hover {
   .cat-wrapper h5 {
     font-size: 0.8rem;
   }
-  .cat-wrapper form input {
+  .cat-search input {
     width: 60%;
   }
-  .cat-wrapper form button img {
+  .cat-search img {
     width: 40%;
   }
 }
@@ -698,6 +705,16 @@ nav .connect #create1:hover {
   width: 70%;
 }
 
+.add-problems-btn {
+  display: flex;
+  justify-content: flex-end;
+  width: 89%;
+  margin-top: 1rem;
+}
+.add-problems-btn a {
+  color: #1DB559;
+}
+
 .card-wrapper {
   padding: 1rem;
 }
@@ -707,6 +724,7 @@ nav .connect #create1:hover {
   width: 90%;
   border-radius: 0.7rem;
   box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.08);
+  margin-top: 0.5rem;
 }
 
 .card-header {
