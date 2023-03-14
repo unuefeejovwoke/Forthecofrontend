@@ -49,20 +49,27 @@
   .img-description {
     width: 40%;
     text-align: center;
-    // img {
-    //   width: 75%;
-    //   height: auto;
-    // }
+    position: relative;
+    
+    .hero-section-img{
+      width: 250px;
+      height: auto;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
   }
 }
 
 .carousel--container {
   max-width: 400px;
+  transform: translateY(50px);
 }
 
 .problem--card {
   max-width: 400px;
   padding: 24px;
+  
   p {
     font-size: 12px;
     text-align: left;
@@ -133,8 +140,10 @@
     display: flex;
     gap: 12px;
     margin-top: 24px;
+    width: 100%;
     img.item1{
       height: 180px;
+      width: 50%;
     }
     .img-item {
       width: 100%;
@@ -197,6 +206,9 @@
       width: 100%;
       text-align: center;
       text-align: -moz-center;
+      .hero-section-img{
+        display: none;
+      }
     }
   }
 }

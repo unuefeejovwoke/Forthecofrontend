@@ -946,10 +946,19 @@ nav .connect #create1:hover {
 .hero-section .img-description {
   width: 40%;
   text-align: center;
+  position: relative;
+}
+.hero-section .img-description .hero-section-img {
+  width: 250px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 .carousel--container {
   max-width: 400px;
+  transform: translateY(50px);
 }
 
 .problem--card {
@@ -1023,9 +1032,11 @@ nav .connect #create1:hover {
   display: flex;
   gap: 12px;
   margin-top: 24px;
+  width: 100%;
 }
 .problem--card .img--container img.item1 {
   height: 180px;
+  width: 50%;
 }
 .problem--card .img--container .img-item {
   width: 100%;
@@ -1079,6 +1090,9 @@ nav .connect #create1:hover {
     width: 100%;
     text-align: center;
     text-align: -moz-center;
+  }
+  .hero-section .img-description .hero-section-img {
+    display: none;
   }
 }
 @media (max-width: 450px) {
