@@ -26,7 +26,8 @@
             <h5>Add an ECO Project</h5>
 
             <form action="index.html" method="get">
-                <input type="text" class="input-field location-field" name="location" required placeholder="Add Location">
+                <input type="text" class="input-field location-field" name="location" required
+                    placeholder="Add Location">
                 <p>City, State</p>
 
                 <div class="project-category">
@@ -39,11 +40,71 @@
                 </div>
 
                 <div class="projects-flier">
-                    <img src="assets/images/project-modal/project-img__1.png" alt="">
-                    <img src="assets/images/project-modal/project-img__2.png" alt="">
-                    <img src="assets/images/project-modal/project-img__3.png" alt="">
-                    <img src="assets/images/project-modal/project-img__4.png" alt="">
-                    <img src="assets/images/project-modal/project-img__5.png" alt="">
+                    <div class="data" id="environment">
+                        <input type="radio" name="environ" id="energy" class="input-hidden">
+                        <label for="energy">
+                            <img src="assets/images/project-modal/project-img__1.png" alt="">
+                        </label>
+
+                        <input type="radio" name="environ" id="climate" class="input-hidden">
+                        <label for="climate">
+                            <img src="assets/images/project-modal/project-img__2.png" alt="">
+                        </label>
+
+                        <input type="radio" name="environ" id="sanitation" class="input-hidden">
+                        <label for="sanitation">
+                            <img src="assets/images/project-modal/project-img__3.png" alt="">
+                        </label>
+
+                        <input type="radio" name="environ" id="marine-habitat" class="input-hidden">
+                        <label for="marine-habitat">
+                            <img src="assets/images/project-modal/project-img__4.png" alt="">
+                        </label>
+
+                        <input type="radio" name="environ" id="land" class="input-hidden">
+                        <label for="land">
+                            <img src="assets/images/project-modal/project-img__5.png" alt="">
+                        </label>
+                    </div>
+
+                    <div class="data" id="community">
+                        <input type="radio" name="community" id="energy1" class="input-hidden">
+                        <label for="energy1">
+                            <img src="assets/images/project-modal/project-img__1.png" alt="">
+                        </label>
+
+                        <input type="radio" name="community" id="climate1" class="input-hidden">
+                        <label for="climate1">
+                            <img src="assets/images/project-modal/project-img__2.png" alt="">
+                        </label>
+
+                        <input type="radio" name="community" id="sanitation1" class="input-hidden">
+                        <label for="sanitation1">
+                            <img src="assets/images/project-modal/project-img__3.png" alt="">
+                        </label>
+
+                        <input type="radio" name="community" id="marine-habitat1" class="input-hidden">
+                        <label for="marine-habitat1">
+                            <img src="assets/images/project-modal/project-img__4.png" alt="">
+                        </label>
+                    </div>
+
+                    <div class="data" id="organization">
+                        <input type="radio" name="environ" id="energy2" class="input-hidden">
+                        <label for="energy2">
+                            <img src="assets/images/project-modal/project-img__1.png" alt="">
+                        </label>
+
+                        <input type="radio" name="environ" id="climate2" class="input-hidden">
+                        <label for="climate2">
+                            <img src="assets/images/project-modal/project-img__2.png" alt="">
+                        </label>
+
+                        <input type="radio" name="environ" id="sanitation2" class="input-hidden">
+                        <label for="sanitation2">
+                            <img src="assets/images/project-modal/project-img__3.png" alt="">
+                        </label>
+                    </div>
                 </div>
 
                 <div class="text-field">
@@ -85,6 +146,18 @@
             </form>
         </article>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#category').on('change', function () {
+                $(".data").hide();
+                $("#" + $(this).val()).fadeIn(700);
+            }).change();
+        });
+    </script>
 </body>
 
 </html>
