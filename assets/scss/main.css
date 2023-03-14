@@ -1448,9 +1448,15 @@ nav .connect #create1:hover {
   .t4ga-section .text-description {
     width: 80%;
     transform: translateX(0);
-  }
-  .t4ga-section .img-description {
     text-align: center;
+  }
+  .t4ga-section .text-description .text-link {
+    background: transparent;
+    color: #F67218;
+    text-decoration: underline;
+  }
+  .t4ga-section .socials--container {
+    justify-content: center;
   }
 }
 @media (max-width: 550px) {

@@ -615,11 +615,19 @@
     .text-description {
       width: 80%;
       transform: translateX(0);
-    }
-
-    .img-description {
       text-align: center;
     }
+    .text-description{
+      .text-link{
+        background: transparent;
+        color: #F67218;
+        text-decoration: underline;
+      }
+    }
+    .socials--container{
+      justify-content: center;
+    }
+
   }
 }
 
