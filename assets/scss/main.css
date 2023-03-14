@@ -99,6 +99,10 @@ img {
   border: 1px solid #09e705;
 }
 
+.visibility {
+  display: none;
+}
+
 .btn {
   font-family: inherit;
   font-size: 1em;

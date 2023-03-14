@@ -74,3 +74,15 @@ for (let i = 0; i < btnCloseModal.length; i++) {
   btnCloseModal[i].addEventListener("click", closeModal);
 }
 overlay.addEventListener("click", closeModal);
+
+
+//alert message
+const alertMessage = document.querySelectorAll('.status-message');
+
+const messageDisappear = function(){
+  for (let i = 0; i<alertMessage.length; i++){
+    alertMessage[i].style.display = "none";
+  }
+}
+
+setTimeout(messageDisappear, 3500);
