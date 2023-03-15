@@ -1949,6 +1949,45 @@
 /*======PROJECT AND PROBLEM PROFILE PAGES STYLING======*/
 
 .problem--profile {
+	.heading {
+		margin-block: 1rem;
+
+		.search {
+			display: flex;
+			width: 40%;
+			input:focus {
+				outline: none;
+			}
+		}
+		form {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: white;
+			border: 1px solid black;
+			padding: 0.3rem 0.3rem;
+			border-radius: 0.5rem;
+			margin: 0.5rem 0;
+
+			input {
+				border: 0;
+				background: transparent;
+			}
+
+			button {
+				border: 0;
+				background: transparent;
+				background-color: $primaryColor;
+				padding: 0.2rem;
+
+				img {
+					width: 70%;
+				}
+			}
+		}
+	}
+
 	.search {
 		justify-content: flex-end;
 	}
