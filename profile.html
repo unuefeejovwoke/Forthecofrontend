@@ -17,6 +17,9 @@
 		/>
 		<link rel="stylesheet" href="assets/scss/main.css" />
 		<title>User Profile | Problems</title>
+
+		<script src="/assets/js/nav.js" defer></script>
+		<script src="/assets/js/main.js" defer></script>
 	</head>
 
 	<body>
@@ -80,7 +83,7 @@
 							<p class="user-email" id="email">samplemail@email.com</p>
 							<p class="user-mobile" id="mobile">+234 (0) 465 9834 324</p>
 						</div>
-						<a href="#" class="edit-profile">
+						<a href="/profile-edit.html" class="edit-profile">
 							<img
 								src="/assets/icons/edit.svg"
 								class="icon"
@@ -100,7 +103,7 @@
 						<span>Become an ambassador</span>
 					</button>
 					<div class="account-action">
-						<a href="#" class="link-text">change password</a>
+						<a href="/change-pswd.html" class="link-text">change password</a>
 						<a href="#" class="logout-btn">Log Out</a>
 					</div>
 				</aside>
@@ -156,7 +159,9 @@
 										alt="user image"
 										class="post__user--img"
 									/>
-									<p class="post__user--name">Gbenro Adams</p>
+									<p class="post__user--name display-on-desktop">
+										Gbenro Adams
+									</p>
 								</div>
 								<div class="post-location card-header--item">
 									<img
@@ -174,6 +179,21 @@
 									<p class="text-fix">UNSdg Goal:</p>
 									<img class="icon" src="assets/images/card/eco.png" alt="" />
 								</div>
+								<div class="display-on-mobile mobile-nav">
+									<img
+										src="/assets/images/notification/more.png"
+										alt="more options"
+										class="mobile-nav--icon nav-toggle"
+									/>
+									<div class="mobile-nav--group nav-group hidden">
+										<button class="mobile-nav--item">
+											<a href="#">Edit problem</a>
+										</button>
+										<button class="mobile-nav--item">
+											<a href="#">Delete problem</a>
+										</button>
+									</div>
+								</div>
 							</div>
 							<hr />
 							<div class="card-details">
@@ -187,7 +207,7 @@
 									omnis dolorum excepturi quaerat itaque facilis tempora natus!
 								</p>
 							</div>
-							<div class="card-footer">
+							<div class="card-footer display-on-desktop">
 								<a href="details-page.html" class="card-link primary-btn">
 									Link to problem
 								</a>
@@ -201,6 +221,24 @@
 										class="trash-icon"
 									/>
 								</button>
+							</div>
+							<div class="card-footer display-on-mobile">
+								<button class="up-count">
+									<img src="assets/images/card/upvote.png" alt="" />
+									<span>1,354</span>
+								</button>
+								<button class="down-count">
+									<img src="assets/images/card/downvote.png" alt="" />
+									<span>456</span>
+								</button>
+								<button class="idea-count">
+									<img src="assets/images/card/idea.png" alt="" />
+									<span>456</span>
+								</button>
+
+								<a href="details-page.html" class="card-link">
+									Link to problem
+								</a>
 							</div>
 						</div>
 					</div>
@@ -213,7 +251,9 @@
 										alt="user image"
 										class="post__user--img"
 									/>
-									<p class="post__user--name">Gbenro Adams</p>
+									<p class="post__user--name display-on-desktop">
+										Gbenro Adams
+									</p>
 								</div>
 								<div class="post-location card-header--item">
 									<img
@@ -231,6 +271,21 @@
 									<p class="text-fix">UNSdg Goal:</p>
 									<img class="icon" src="assets/images/card/eco.png" alt="" />
 								</div>
+								<div class="display-on-mobile mobile-nav">
+									<img
+										src="/assets/images/notification/more.png"
+										alt="more options"
+										class="mobile-nav--icon nav-toggle"
+									/>
+									<div class="mobile-nav--group nav-group hidden">
+										<button class="mobile-nav--item">
+											<a href="#">Edit problem</a>
+										</button>
+										<button class="mobile-nav--item">
+											<a href="#">Delete problem</a>
+										</button>
+									</div>
+								</div>
 							</div>
 							<hr />
 							<div class="card-details">
@@ -244,7 +299,7 @@
 									omnis dolorum excepturi quaerat itaque facilis tempora natus!
 								</p>
 							</div>
-							<div class="card-footer">
+							<div class="card-footer display-on-desktop">
 								<a href="details-page.html" class="card-link primary-btn">
 									Link to problem
 								</a>
@@ -258,6 +313,24 @@
 										class="trash-icon"
 									/>
 								</button>
+							</div>
+							<div class="card-footer display-on-mobile">
+								<button class="up-count">
+									<img src="assets/images/card/upvote.png" alt="" />
+									<span>1,354</span>
+								</button>
+								<button class="down-count">
+									<img src="assets/images/card/downvote.png" alt="" />
+									<span>456</span>
+								</button>
+								<button class="idea-count">
+									<img src="assets/images/card/idea.png" alt="" />
+									<span>456</span>
+								</button>
+
+								<a href="details-page.html" class="card-link">
+									Link to problem
+								</a>
 							</div>
 						</div>
 					</div>

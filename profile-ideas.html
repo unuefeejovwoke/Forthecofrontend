@@ -17,6 +17,9 @@
 		/>
 		<link rel="stylesheet" href="assets/scss/main.css" />
 		<title>User Profile | Ideas</title>
+
+		<script src="/assets/js/nav.js" defer></script>
+		<script src="/assets/js/main.js" defer></script>
 	</head>
 
 	<body>
@@ -80,7 +83,7 @@
 							<p class="user-email" id="email">samplemail@email.com</p>
 							<p class="user-mobile" id="mobile">+234 (0) 465 9834 324</p>
 						</div>
-						<a href="#" class="edit-profile">
+						<a href="/profile-edit.html" class="edit-profile">
 							<img
 								src="/assets/icons/edit.svg"
 								class="icon"
@@ -100,7 +103,7 @@
 						<span>Become an ambassador</span>
 					</button>
 					<div class="account-action">
-						<a href="#" class="link-text">change password</a>
+						<a href="/change-pswd.html" class="link-text">change password</a>
 						<a href="#" class="logout-btn">Log Out</a>
 					</div>
 				</aside>
@@ -123,7 +126,9 @@
 						</button>
 					</section>
 					<section class="profile-ideas--container">
-						<p class="ideas-heading">Link to where the problem was dropped</p>
+						<p class="ideas-heading display-on-desktop">
+							Link to where the problem was dropped
+						</p>
 
 						<div class="card">
 							<div class="card-wrapper">
@@ -140,6 +145,21 @@
 										<span class="text-fix">Posted: </span>
 										<span class="idea-date">11:34pm 02mar,2024</span>
 									</div>
+									<div class="display-on-mobile mobile-nav">
+										<img
+											src="/assets/images/notification/more.png"
+											alt="more options"
+											class="mobile-nav--icon nav-toggle"
+										/>
+										<div class="mobile-nav--group nav-group hidden">
+											<button class="mobile-nav--item">
+												<a href="#">Edit idea</a>
+											</button>
+											<button class="mobile-nav--item">
+												<a href="#">Delete idea</a>
+											</button>
+										</div>
+									</div>
 								</div>
 								<hr />
 								<div class="card-details">
@@ -154,7 +174,7 @@
 										facilis tempora natus!
 									</p>
 								</div>
-								<div class="card-footer">
+								<div class="card-footer display-on-desktop">
 									<a href="details-page.html" class="card-link primary-btn">
 										Link to problem
 									</a>
@@ -186,6 +206,21 @@
 										<span class="text-fix">Posted: </span>
 										<span class="idea-date">11:34pm 02mar,2024</span>
 									</div>
+									<div class="display-on-mobile mobile-nav">
+										<img
+											src="/assets/images/notification/more.png"
+											alt="more options"
+											class="mobile-nav--icon nav-toggle"
+										/>
+										<div class="mobile-nav--group nav-group hidden">
+											<button class="mobile-nav--item">
+												<a href="#">Edit idea</a>
+											</button>
+											<button class="mobile-nav--item">
+												<a href="#">Delete idea</a>
+											</button>
+										</div>
+									</div>
 								</div>
 								<hr />
 								<div class="card-details">
@@ -200,7 +235,7 @@
 										facilis tempora natus!
 									</p>
 								</div>
-								<div class="card-footer">
+								<div class="card-footer display-on-desktop">
 									<a href="details-page.html" class="card-link primary-btn">
 										Link to problem
 									</a>

@@ -976,7 +976,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		// margin-bottom: 2rem;
 		position: relative;
 	}
 
@@ -987,7 +986,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		// border-radius: 2rem;
+		border-radius: 2rem;
+		z-index: 8;
 	}
 	&--org {
 		width: 20%;
@@ -996,8 +996,12 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		// border-radius: 2rem;
+		border-radius: 2rem;
+		z-index: 6;
+
+		@include before($accentColor, absolute, 2rem, -1, 0, 10%);
 	}
+
 	&--env {
 		width: 10%;
 		height: 100%;
@@ -1005,7 +1009,10 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		// border-radius: 2rem;
+		border-radius: 2rem;
+		z-index: 4;
+
+		@include before($primaryColor, absolute, 2rem, -4, 0, 0);
 	}
 
 	&--legend {
@@ -1133,9 +1140,11 @@
 			-o-object-position: center;
 		}
 	}
+
+	@include desktop-display(flex);
 }
 
-// ================== PROFILE MEDIA QUERIES ==============================
+// ================== PROFILE - PROBLEMS MEDIA QUERIES ==============================
 
 @media screen and (max-width: 650px) {
 	.problem--profile {
@@ -1176,6 +1185,10 @@
 			}
 
 			&-header {
+				align-items: flex-end;
+				justify-content: space-between;
+				gap: 0.5rem;
+
 				&--item {
 					display: flex;
 					flex-direction: column;
@@ -1184,6 +1197,7 @@
 
 					.text-fix {
 						font-size: 0.65rem;
+						width: fit-content;
 					}
 
 					.icon {
@@ -1193,11 +1207,11 @@
 
 				.goal {
 					width: 30%;
-				}
-			}
 
-			.post__user--img {
-				display: none;
+					.text-fix {
+						width: max-content;
+					}
+				}
 			}
 
 			.location-icon {
@@ -1207,6 +1221,42 @@
 
 		.sidebar {
 			display: none;
+		}
+	}
+
+	.card {
+		@include mobile-display(flex);
+	}
+
+	.mobile-nav {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		position: relative;
+		margin-left: auto;
+
+		&--icon {
+			height: 1rem;
+		}
+
+		&--group {
+			position: absolute;
+			top: 1.5rem;
+			width: max-content;
+			right: 0;
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+			font-size: 0.8rem;
+			z-index: 10;
+		}
+
+		&--item {
+			background-color: #fff;
+			padding: 0.5rem;
+			border-radius: 0.2rem;
+			text-transform: capitalize;
+			box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
 		}
 	}
 }
@@ -1235,7 +1285,7 @@
 	}
 }
 
-// ================ MEDIA QUERIES ========================
+// ================ PROFILE -PROJECTS MEDIA QUERIES ========================
 @media screen and (max-width: 650px) {
 	.profile-projects {
 		.post__user--name {
@@ -1245,6 +1295,15 @@
 
 		.card-share {
 			flex-direction: column;
+
+			&--img {
+				width: 1.5rem;
+			}
+
+			&--img-group {
+				margin-inline: auto;
+				margin-top: 1rem;
+			}
 		}
 	}
 }
@@ -1255,7 +1314,7 @@
 		background-color: #fff;
 		border-radius: 1rem;
 		margin-top: 1rem;
-		padding-top: 0.5rem;
+		padding-block: 0.5rem;
 		box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
 
 		.ideas-heading {
@@ -1269,6 +1328,7 @@
 
 			&-header {
 				justify-content: flex-start;
+				align-items: center;
 
 				&--item {
 					font-size: 0.8rem;
@@ -1291,7 +1351,7 @@
 		}
 	}
 
-	// ============ MEDIA QUERIES ================
+	// ============ PROFILE -IDEAS MEDIA QUERIES ================
 	@media screen and (max-width: 650px) {
 		.card {
 			&-header--item {
@@ -1302,8 +1362,65 @@
 				display: inline-block;
 			}
 			.post__user--name {
+				font-size: 0.7rem;
 				margin-inline: 0;
 			}
 		}
+	}
+}
+
+// ============= PROFILE EDIT STYLING ===================
+.profile-edit {
+	position: relative;
+	width: 100%;
+	@include desktop-display(flex);
+
+	.user-avatar--container {
+		margin: 1rem auto;
+		width: max-content;
+		display: block;
+		position: relative;
+	}
+
+	.user-avatar {
+		position: absolute;
+		display: block;
+		bottom: 0.5rem;
+		right: 0;
+		width: 2rem;
+		cursor: pointer;
+
+		&--img {
+			width: 6rem;
+			padding: 1rem;
+			margin: 0.5rem;
+			border-radius: 50%;
+			background-color: rgba(0, 0, 0, 0.2);
+		}
+
+		&--input {
+			display: none;
+		}
+	}
+
+	label {
+		padding-left: 1rem;
+	}
+
+	.var-input {
+		border-radius: 0;
+		padding: 0.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.input-icon {
+		height: 1rem;
+		object-fit: contain;
+	}
+}
+// ================= PROFILE EDIT MEDIA QUERIES ========================
+@media screen and (max-width: 650px) {
+	.profile-edit {
+		@include mobile-display(flex);
 	}
 }
