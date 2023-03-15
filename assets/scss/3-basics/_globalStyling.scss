@@ -92,6 +92,15 @@ img{
   border: 1px solid #09e705;
 }
 
+@media (max-width: 500px){
+  .status-message{
+    width: 80%;
+  }
+}
+
+.visibility{
+  display: none;
+}
 // .body--wrapper{
 //   padding: 0 24px;
 // }
