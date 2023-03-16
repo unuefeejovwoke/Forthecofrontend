@@ -423,7 +423,6 @@ nav .dropdown:hover > .dropdown-content {
   display: initial;
 }
 nav .connect {
-  width: 30%;
   background: #f9fffb;
   padding: 1.5rem 12px;
   margin-left: auto;
@@ -499,7 +498,6 @@ nav .connect #create1:hover {
     flex-direction: column;
     transition: 0.2s all ease-in;
     gap: 48px;
-    width: unset;
   }
   nav .menu {
     display: block;
