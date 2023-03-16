@@ -32,7 +32,8 @@ h5 {
   color: rgb(4, 30, 14);
 }
 
-h1, h2 {
+h1,
+h2 {
   color: rgb(29, 181, 89);
 }
 
@@ -60,6 +61,51 @@ img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.primary-color {
+  color: rgb(29, 181, 89);
+}
+
+.non-bold {
+  font-weight: 400;
+}
+
+.margin-bottom {
+  margin-bottom: 24px;
+}
+
+.status-message {
+  padding: 12px 12px;
+  border-radius: 8px;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  left: 25%;
+  z-index: 9999999;
+}
+.status-message p {
+  color: #fff;
+}
+
+.alert-error {
+  background-color: rgb(236, 82, 61);
+  border: 1px solid rgb(253, 30, 1);
+}
+
+.alert-success {
+  background-color: #45ad43;
+  border: 1px solid #09e705;
+}
+
+@media (max-width: 500px) {
+  .status-message {
+    width: 80%;
+  }
+}
+.visibility {
+  display: none;
 }
 
 .btn {
