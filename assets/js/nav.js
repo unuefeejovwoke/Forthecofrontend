@@ -1,10 +1,10 @@
 // UI VARIABLES
-const navToggle = document.querySelectorAll('.nav-toggle');
+const allNavToggle = document.querySelectorAll('.nav-toggle');
 const navContainer = document.querySelectorAll('.nav-group');
 
 // TOGGLE MENU
-for (let toggleIndex = 0; toggleIndex < navToggle.length; toggleIndex++) {
-	navToggle[toggleIndex].addEventListener('click', () =>
+for (let toggleIndex = 0; toggleIndex < allNavToggle.length; toggleIndex++) {
+	allNavToggle[toggleIndex].addEventListener('click', () =>
 		toggleNavbar(toggleIndex)
 	);
 }
