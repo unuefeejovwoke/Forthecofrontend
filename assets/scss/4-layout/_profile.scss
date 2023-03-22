@@ -79,20 +79,29 @@
 			color: $accentColor;
 		}
 	}
+
+	.account-action {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .ambassador-btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0.8rem 0.2rem;
+	padding: 0.8rem 1rem;
 	border-radius: 0.4rem;
-	max-width: 100%;
+	width: 95%;
+	margin-inline: auto;
+	margin-bottom: 1rem;
 	color: white;
+	font-size: 0.8rem;
 	background-color: $primaryColor;
 
 	span {
-		font-size: 0.8em;
+		display: inline-block;
+		margin-left: 0.2rem;
 	}
 }
 
@@ -107,6 +116,10 @@
 @media screen and (max-width: 800px) {
 	.profile {
 		width: 28%;
+
+		.ambassador-btn {
+			font-size: 0.6rem;
+		}
 	}
 }
 
@@ -140,10 +153,6 @@
 			width: 40%;
 		}
 
-		.user--info {
-			margin-bottom: 2rem;
-		}
-
 		.username {
 			font-size: 2rem;
 		}
@@ -171,7 +180,7 @@
 		}
 
 		.ambassador-btn {
-			width: 50%;
+			width: 90%;
 			font-size: 1.2rem;
 			margin-inline: auto;
 		}
