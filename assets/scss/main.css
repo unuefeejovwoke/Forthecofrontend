@@ -975,7 +975,9 @@ nav .connect #create1:hover {
 .profile--img {
   width: 80%;
   aspect-ratio: 1/1;
-  border-radius: 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+  -o-object-fit: cover;
 }
 .profile .username {
   font-size: 1em;
@@ -1005,7 +1007,7 @@ nav .connect #create1:hover {
   width: 1rem;
   aspect-ratio: 1/1;
   display: inline-block;
-  margin-right: 0.1rem;
+  margin-right: 0.2rem;
 }
 .profile .link-text {
   color: rgb(4, 30, 14);
@@ -1028,7 +1030,7 @@ nav .connect #create1:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.8rem 1rem;
+  padding: 0.8rem;
   border-radius: 0.4rem;
   width: 95%;
   margin-inline: auto;
@@ -1049,10 +1051,18 @@ nav .connect #create1:hover {
   display: inline-block;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .profile {
     width: 28%;
   }
+  .profile .user-mobile {
+    font-size: 0.7rem;
+  }
+  .profile .ambassador-btn {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 800px) {
   .profile .ambassador-btn {
     font-size: 0.6rem;
   }
@@ -1072,17 +1082,13 @@ nav .connect #create1:hover {
     display: none;
   }
   .profile--card {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-end;
     box-shadow: none;
     border: unset;
     border-radius: 0;
     position: relative;
   }
   .profile--img {
-    width: 40%;
+    margin-block: 2rem 1rem;
   }
   .profile .username {
     font-size: 2rem;
@@ -1102,7 +1108,7 @@ nav .connect #create1:hover {
   .profile .edit-profile {
     font-size: 0.8em;
     position: absolute;
-    top: 2rem;
+    top: 0;
     right: 0;
   }
   .profile .ambassador-btn {
@@ -1120,6 +1126,14 @@ nav .connect #create1:hover {
   }
   .profile .user-role {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .profile .user-mobile {
+    font-size: 0.7rem;
+  }
+  .profile .ambassador-btn {
+    font-size: 0.6rem;
   }
 }
 .main-content {
@@ -2043,6 +2057,7 @@ nav .connect #create1:hover {
   }
 }
 /*======END OF ADD PROJECT AND PROBLEM PAGES STYLING======*/
+/*==============PROFILE PAGES STYLING====================*/
 .user--profile {
   /*======PROFILE NAVIGATION STYLING======*/
 }
@@ -2202,14 +2217,13 @@ nav .connect #create1:hover {
 }
 .card-header--item {
   margin-right: 1.5px;
-}
-.card-header .location-icon {
-  height: 0.5rem;
-  margin-right: 1.5px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  font-size: 0.65rem;
 }
 .card-header .category-tag {
   color: rgb(46, 162, 207);
+  font-size: 0.8rem;
 }
 .card .post__user {
   display: flex;
@@ -2223,49 +2237,47 @@ nav .connect #create1:hover {
   object-fit: contain;
   -o-object-fit: contain;
 }
-.card .post__user--name {
-  text-transform: capitalize;
-}
 .card-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-}
-.card-footer .primary-btn {
-  width: 40%;
-  background-color: rgb(29, 181, 89);
-  padding: 0.5rem;
-  margin-top: 0;
-  transition: all 0.2s ease-in-out;
-}
-.card-footer .primary-btn:hover {
-  background-color: rgb(46, 162, 207);
+  margin-block: 1rem 0;
 }
 .card-footer .secondary-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid rgb(29, 181, 89);
   border-radius: 0.5rem;
-  width: 40%;
+  min-width: 40%;
   text-align: center;
   padding: 0.5rem;
   transition: all 0.2s ease-in-out;
 }
+.card-footer .secondary-btn .icon {
+  margin-block: 0;
+  margin-right: 0.5rem;
+}
 .card-footer .secondary-btn:hover {
   border-color: rgb(46, 162, 207);
 }
-.card-footer .primary-btn:active,
-.card-footer .secondary-btn:active {
-  transform: translateY(0.25rem);
-}
 .card-footer .danger-btn {
-  background-color: red;
-  padding: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: red;
+  color: #fff;
+  padding: 0.5rem;
   border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.card-footer .danger-btn:active,
+.card-footer .secondary-btn:active {
+  transform: translateY(0.25rem);
 }
 .card-footer .trash-icon {
   width: 1.5rem;
+  margin-right: 0.5rem;
   aspect-ratio: 1/1;
   object-position: center;
   -o-object-position: center;
@@ -2317,20 +2329,7 @@ nav .connect #create1:hover {
     width: 60%;
     margin-right: 1rem;
   }
-  .user--profile .card-header--item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .user--profile .location-icon {
-    height: 1rem;
-    margin-inline: auto;
-  }
-  .user--profile .eco-cat {
-    max-width: 6rem;
-  }
   .user--profile .goal {
-    flex-direction: column;
     margin-right: 0;
   }
   .user--profile .goal .text-fix {
@@ -2347,14 +2346,6 @@ nav .connect #create1:hover {
   }
   .user--profile .card-main {
     width: 70%;
-  }
-  .user--profile .post-location {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .user--profile .post__user--img {
-    display: none;
   }
   .user--profile .post__user--name {
     width: -moz-max-content;
@@ -2406,28 +2397,18 @@ nav .connect #create1:hover {
     gap: 0.5rem;
   }
   .user--profile .card-header--item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 0.5rem;
+    font-size: 0.8rem;
   }
   .user--profile .card-header--item .text-fix {
-    font-size: inherit;
     width: -moz-fit-content;
     width: fit-content;
   }
   .user--profile .card-header--item .icon {
     width: 1rem;
   }
-  .user--profile .card-header .goal {
-    width: 30%;
-  }
-  .user--profile .card-header .goal .text-fix {
+  .user--profile .card-header .text-fix {
     width: -moz-max-content;
     width: max-content;
-  }
-  .user--profile .card .location-icon {
-    height: 1rem;
   }
   .user--profile .sidebar {
     display: none;
@@ -2441,41 +2422,15 @@ nav .connect #create1:hover {
   .card .display-on-mobile {
     display: flex !important;
   }
-  .mobile-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: relative;
-    margin-left: auto;
-  }
-  .mobile-nav--icon {
-    height: 1rem;
-  }
-  .mobile-nav--group {
-    position: absolute;
-    top: 1.5rem;
-    width: -moz-max-content;
-    width: max-content;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: 0.8rem;
-    z-index: 10;
-  }
-  .mobile-nav--item {
-    background-color: #fff;
-    padding: 0.5rem;
-    border-radius: 0.2rem;
-    text-transform: capitalize;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
-  }
   .hidden {
     display: none;
   }
 }
 .profile-projects .hidden {
   display: none;
+}
+.profile-projects .card-header--item {
+  flex-direction: column;
 }
 .profile-projects .card-share {
   display: flex;
@@ -2497,11 +2452,6 @@ nav .connect #create1:hover {
 }
 
 @media screen and (max-width: 650px) {
-  .profile-projects .post__user--name {
-    font-size: 0.6rem;
-    width: -moz-max-content;
-    width: max-content;
-  }
   .profile-projects .card-share {
     flex-direction: column;
   }
@@ -2528,23 +2478,18 @@ nav .connect #create1:hover {
   background-color: #f1faf4;
   border-radius: 1rem;
 }
-.profile-ideas--container .card-header {
-  justify-content: flex-start;
-  align-items: center;
-}
 .profile-ideas--container .card-header--item {
   font-size: 0.8rem;
 }
 .profile-ideas--container .card .post__user--img {
   width: 2rem;
 }
-.profile-ideas--container .card .post__user--name {
-  font-size: 1rem;
-  margin-inline: 0.5rem 1rem;
-  font-weight: 600;
-}
 .profile-ideas--container .card .post-date {
   color: rgba(44, 44, 44, 0.5);
+}
+.profile-ideas--container .card .text-fix {
+  margin-right: 0.2rem;
+  font-weight: bold;
 }
 @media screen and (max-width: 650px) {
   .profile-ideas .card-header--item {
@@ -2552,10 +2497,6 @@ nav .connect #create1:hover {
   }
   .profile-ideas .card .post__user--img {
     display: inline-block;
-  }
-  .profile-ideas .card .post__user--name {
-    font-size: 0.7rem;
-    margin-inline: 0;
   }
 }
 
