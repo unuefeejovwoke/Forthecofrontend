@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="shortcut icon"
+			href="assets/images/eco-logo.png"
+			type="image/png"
+		/>
+		<link rel="stylesheet" href="assets/scss/main.css" />
+		<title>User Profile | Projects</title>
+
+		<script src="/assets/js/nav.js" defer></script>
+		<script src="/assets/js/main.js" defer></script>
+	</head>
+
+	<body>
+		<div class="body-wrapper user--profile">
+			<nav>
+				<div class="logo">
+					<img src="/assets/images/notification/logo 3(1).png" alt="Eco logo" />
+				</div>
+
+				<div class="right-side__nav hidden">
+					<div class="nav-links toggler">
+						<a href="index.html">Home</a>
+						<a href="problems.html"
+							>The Eco<img
+								src="/assets/images/notification/arrowdown.png"
+								alt="arrow down"
+								class="eco-img"
+						/></a>
+						<a href="#">PAls App</a>
+						<a href="#">Tech4Good</a>
+						<a href="#">Services</a>
+					</div>
+					<div class="connect toggler skew">
+						<a href="form.html" id="login1">Log In</a>
+						<a href="form.html" id="create1">Create Account</a>
+					</div>
+				</div>
+				<div class="menu">
+					<button>
+						<img src="assets/images/notification/more.png" alt="" />
+					</button>
+				</div>
+			</nav>
+			<section class="heading">
+				<div class="search">
+					<form class="">
+						<input type="text" name="" id="" placeholder="Search" />
+						<button>
+							<img
+								src="assets/images/category/search.png"
+								alt="search button"
+							/>
+						</button>
+					</form>
+				</div>
+			</section>
+			<section class="main-content">
+				<aside class="profile">
+					<div class="profile--card">
+						<img
+							class="profile--img"
+							src="/assets/images/avatar-img.svg"
+							alt="user profile image"
+						/>
+						<div class="user--info">
+							<h4 class="username" id="name">michael thomas</h4>
+
+							<p class="user-role" id="role">community ambassador</p>
+						</div>
+						<div class="user-contact">
+							<p class="user-email" id="email">samplemail@email.com</p>
+							<p class="user-mobile" id="mobile">+234 (0) 465 9834 324</p>
+						</div>
+						<a href="/profile-edit.html" class="edit-profile">
+							<img
+								src="/assets/icons/edit.svg"
+								class="icon"
+								alt=""
+								aria-hidden="true"
+							/>
+							<span>edit profile</span>
+						</a>
+					</div>
+					<button class="ambassador-btn">
+						<img
+							src="/assets/icons/star.svg"
+							class="icon"
+							alt=""
+							aria-hidden="true"
+						/>
+						<span>Become an ambassador</span>
+					</button>
+					<div class="account-action">
+						<a href="#" class="link-text">change password</a>
+						<a href="#" class="logout-btn">Log Out</a>
+					</div>
+				</aside>
+				<main class="card-main profile-projects">
+					<section class="profile--nav">
+						<a href="/profile.html" class="profile--nav-link">problems</a>
+						<a href="/profile-projects.html" class="profile--nav-link active"
+							>projects</a
+						>
+						<a href="/profile-ideas.html" class="profile--nav-link">ideas</a>
+
+						<button class="profile--nav-link search-btn">
+							<img
+								class="search-icon"
+								src="assets/images/category/search.png"
+								alt="search button"
+							/>
+						</button>
+					</section>
+					<section class="stats">
+						<h5 class="stats-heading">
+							Projects posted <span id="problem-count">(20)</span>
+						</h5>
+						<div class="stats--wrapper">
+							<span class="stats--com">70%</span>
+							<span class="stats--org">20%</span>
+							<span class="stats--env">10%</span>
+						</div>
+						<div class="stats--legend">
+							<div class="legend--wrapper">
+								<div class="legend--item env"></div>
+								<span class="legend-label">environment</span>
+							</div>
+							<div class="legend--wrapper">
+								<div class="legend--item com"></div>
+								<span class="legend-label">community</span>
+							</div>
+							<div class="legend--wrapper">
+								<div class="legend--item org"></div>
+								<span class="legend-label">organization</span>
+							</div>
+						</div>
+					</section>
+
+					<div class="card">
+						<div class="card-wrapper">
+							<div class="card-header">
+								<div class="post__user card-header--item">
+									<p class="post__user--name">Sponsor:</p>
+									<p class="post__user--name">bangman group</p>
+								</div>
+
+								<div class="eco-cat card-header--item">
+									<p class="text-fix">Eco Category:</p>
+									<a class="category-tag" href="">Community</a>
+								</div>
+								<div class="goal card-header--item">
+									<p class="text-fix">UNSdg Goal:</p>
+									<img class="icon" src="assets/images/card/eco.png" alt="" />
+								</div>
+							</div>
+							<hr />
+							<div class="card-details">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+									minus delectus aliquam optio sunt ab. Explicabo magnam natus,
+									eius officia et perferendis, aperiam molestiae libero numquam
+									maxime ab dolorum hic. Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Molestias odit obcaecati libero ex rerum
+									voluptates quibusdam at veritatis iure. Dolorem maxime fugiat
+									omnis dolorum excepturi quaerat itaque facilis tempora natus!
+								</p>
+								<div class="card-share">
+									<p class="card-share--txt">
+										Connect with the sponsor of the project:
+									</p>
+
+									<div class="card-share--img-group">
+										<a href="#">
+											<img
+												class="icon card-share--img"
+												src="/assets/images/card/project-card/linkedin.png"
+												alt="linkedin"
+											/>
+										</a>
+										<a href="#">
+											<img
+												class="icon card-share--img"
+												src="/assets/images/card/project-card/Twitter.png"
+												alt="twitter"
+											/>
+										</a>
+										<a href="#">
+											<img
+												class="icon card-share--img"
+												src="/assets/images/card/project-card/insta.png"
+												alt="instagram"
+											/>
+										</a>
+										<a href="#">
+											<img
+												class="icon card-share--img"
+												src="/assets/images/card/project-card/gmail (2).png"
+												alt="send email"
+											/>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="card-footer">
+								<a href="details-page.html" class="secondary-btn">
+									<img
+										src="/assets/icons/edit.svg"
+										class="icon"
+										alt=""
+										aria-hidden="true"
+									/>
+									<span>Edit project</span>
+								</a>
+								<button class="danger-btn">
+									<img
+										src="/assets/icons/trash.svg"
+										alt="delete problem"
+										class="trash-icon icon"
+									/>
+									<a href="#">Delete project</a>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-wrapper">
+							<div class="card-header">
+								<div class="post__user card-header--item">
+									<p class="post__user--name">Sponsor:</p>
+									<p class="post__user--name">bangman group</p>
+								</div>
+
+								<div class="eco-cat card-header--item">
+									<p class="text-fix">Eco Category:</p>
+									<a class="category-tag" href="">Community</a>
+								</div>
+								<div class="goal card-header--item">
+									<p class="text-fix">UNSdg Goal:</p>
+									<img class="icon" src="assets/images/card/eco.png" alt="" />
+								</div>
+							</div>
+							<hr />
+							<div class="card-details">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+									minus delectus aliquam optio sunt ab. Explicabo magnam natus,
+									eius officia et perferendis, aperiam molestiae libero numquam
+									maxime ab dolorum hic. Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Molestias odit obcaecati libero ex rerum
+									voluptates quibusdam at veritatis iure. Dolorem maxime fugiat
+									omnis dolorum excepturi quaerat itaque facilis tempora natus!
+								</p>
+								<div class="card-share">
+									<p class="card-share--txt">
+										Connect with the sponsor of the project:
+									</p>
+
+									<div class="card-share--img-group">
+										<a href="#">
+											<img
+												class="icon card-share--img"
+												src="/assets/images/card/project-card/linkedin.png"
+												alt="linkedin"
+											/>
+										</a>
+										<a href="#">
+											<img
+												class="icon card-share--img"
+												src="/assets/images/card/project-card/Twitter.png"
+												alt="twitter"
+											/>
+										</a>
+										<a href="#">
+											<img
+												class="icon card-share--img"
+												src="/assets/images/card/project-card/insta.png"
+												alt="instagram"
+											/>
+										</a>
+										<a href="#">
+											<img
+												class="icon card-share--img"
+												src="/assets/images/card/project-card/gmail (2).png"
+												alt="send email"
+											/>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="card-footer">
+								<a href="details-page.html" class="secondary-btn">
+									<img
+										src="/assets/icons/edit.svg"
+										class="icon"
+										alt=""
+										aria-hidden="true"
+									/>
+									<span>Edit project</span>
+								</a>
+								<button class="danger-btn">
+									<img
+										src="/assets/icons/trash.svg"
+										alt="delete problem"
+										class="trash-icon icon"
+									/>
+									<a href="#">Delete project</a>
+								</button>
+							</div>
+						</div>
+					</div>
+				</main>
+				<aside class="sidebar form"></aside>
+			</section>
+		</div>
+	</body>
+</html>
