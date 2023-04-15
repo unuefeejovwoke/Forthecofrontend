@@ -470,9 +470,6 @@ nav .dropdown-content a {
   display: block;
   text-align: left;
 }
-nav .dropdown:hover > .dropdown-content {
-  display: initial;
-}
 nav .connect {
   background: #f9fffb;
   padding: 1.5rem 12px;
