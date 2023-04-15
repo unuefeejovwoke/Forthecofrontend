@@ -412,6 +412,11 @@ textarea {
   width: 90%;
 }
 
+.dropbtn {
+  font-size: 0.95rem;
+  color: rgb(84, 84, 84);
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -552,11 +557,11 @@ nav .connect #create1:hover {
     position: absolute;
   }
   nav .dropdown-content {
-    top: 2rem;
+    top: 4.5rem;
     bottom: 0;
-    left: 7rem;
-    max-height: 28%;
-    width: 25%;
+    right: 7.5rem;
+    max-height: 30%;
+    width: 28%;
   }
   nav .nav-links {
     display: flex;
@@ -576,10 +581,17 @@ nav .connect #create1:hover {
     padding: 0.7rem 12px;
   }
 }
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .body-wrapper {
     margin: 0;
     width: 100%;
+  }
+  nav .dropdown-content {
+    top: 4rem;
+    bottom: 0;
+    right: 0rem;
+    max-height: 28%;
+    width: 25%;
   }
 }
 .cat-wrapper {
