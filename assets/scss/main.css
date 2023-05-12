@@ -407,6 +407,90 @@ textarea {
     width: 90%;
   }
 }
+.error-main {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-inline: auto;
+}
+.error-main .illustration-img__wrapper {
+  display: block;
+  width: 95%;
+  margin: 0 auto -4rem auto;
+  height: 8rem;
+  position: relative;
+}
+.error-main .illustration-img {
+  display: inline-block;
+  width: 100%;
+  top: 0;
+  opacity: 0.6;
+  margin-bottom: 2rem;
+  position: absolute;
+  z-index: -1;
+  isolation: isolate;
+}
+@media screen and (max-width: 1024px) {
+  .error-main .illustration-img__wrapper {
+    margin-bottom: -10rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .error-main {
+    width: 80%;
+    margin-block: 4rem;
+  }
+}
+
+.error-404 {
+  width: 80%;
+  max-width: 40rem;
+  margin: 6rem auto 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+.error-404__img--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error-404__img {
+  width: 100%;
+}
+.error-404__heading {
+  color: rgb(4, 30, 14);
+  font-size: 2rem;
+  margin-top: -4rem;
+  margin-left: 5rem;
+}
+.error-404__txt {
+  margin-block: 2rem;
+  margin-inline: auto;
+  width: 80%;
+}
+.error-404 .btn {
+  padding-inline: 4rem;
+}
+@media screen and (max-width: 650px) {
+  .error-404 {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .error-404__heading {
+    margin-top: -2.5rem;
+    margin-left: 3rem;
+    font-size: 1.2rem;
+  }
+  .error-404__txt {
+    width: 100%;
+  }
+}
+
 .body-wrapper {
   margin: 0 auto;
   width: 90%;
@@ -869,15 +953,6 @@ nav .connect #create1:hover {
 }
 .comment-footer button span {
   font-size: 0.83rem;
-}
-
-.empty-card .card-details {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
 }
 
 @media only screen and (max-width: 1020px) {
@@ -2250,7 +2325,7 @@ nav .connect #create1:hover {
 }
 .card .post__user--img {
   width: 1.5rem;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1;
   border-radius: 50%;
   object-fit: contain;
   -o-object-fit: contain;
@@ -2545,6 +2620,7 @@ nav .connect #create1:hover {
 }
 .profile-edit .user-avatar--img {
   width: 6rem;
+  aspect-ratio: 1;
   padding: 1rem;
   margin: 0.5rem;
   border-radius: 50%;

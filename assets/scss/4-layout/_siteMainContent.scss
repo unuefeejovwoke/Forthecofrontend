@@ -1214,7 +1214,7 @@
 
 		&--img {
 			width: 1.5rem;
-			aspect-ratio: 1/1;
+			aspect-ratio: 1;
 			border-radius: 50%;
 			object-fit: contain;
 			-o-object-fit: contain;
@@ -1572,6 +1572,8 @@
 
 		&--img {
 			width: 6rem;
+			// ADD ASPECT RATIO TO FIX WARPED AVATAR
+			aspect-ratio: 1;
 			padding: 1rem;
 			margin: 0.5rem;
 			border-radius: 50%;
