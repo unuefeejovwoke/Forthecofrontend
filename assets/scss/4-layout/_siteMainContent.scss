@@ -1606,3 +1606,157 @@
 		@include mobile-display(flex);
 	}
 }
+
+// ================= COMING SOON (iPALS) STYLES ========================
+.coming-soon {
+	min-height: 35rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-block: 4rem;
+	position: relative;
+
+	// IMAGE/TEXT WRAPPER
+	&__intro {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	// MOCKUP IMAGE
+	&__mockup-img {
+		width: 40%;
+		position: absolute;
+		left: 2rem;
+		bottom: 0;
+	}
+
+	// COMING SOON TEXT
+	&__heading {
+		font-weight: 400;
+		font-size: 6rem;
+		color: $titleTextColor;
+		text-transform: capitalize;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		transform: rotate(-6deg);
+
+		span {
+			display: inline-block;
+			font-size: 8rem;
+			margin-right: -4rem;
+			align-self: flex-end;
+		}
+	}
+
+	&__illustration {
+		display: inline-block;
+		margin-left: 1rem;
+	}
+
+	// COMING SOON CTA FORM
+	&__form {
+		width: 60%;
+		max-width: 35rem;
+		margin: 2rem 4rem 4rem 10rem;
+
+		&--heading {
+			font-size: 1.5rem;
+			text-align: center;
+		}
+
+		// INPUT WRAPPER
+		&--item {
+			border: 2px solid $bodyTextColor;
+			border-radius: 0.5rem;
+			display: flex;
+			padding: 2px;
+		}
+
+		&--input {
+			border: unset;
+			outline: unset;
+			background-color: transparent;
+			flex: 1;
+			margin-right: 0.5rem;
+		}
+
+		.icon {
+			display: inline-block;
+			margin: 5px;
+			height: 2rem;
+			filter: invert(59%) sepia(28%) saturate(1245%) hue-rotate(91deg)
+				brightness(90%) contrast(85%); // change color to green
+		}
+	}
+
+	// =============== COMING SOON (iPALS) MEDIA QUERIES ========================
+	@media screen and (max-width: 1024px) {
+		&__mockup-img {
+			left: 1rem;
+			bottom: 3rem;
+		}
+
+		&__form {
+			max-width: 30rem;
+			margin: 1rem 4rem 2rem 14rem;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		min-height: 32rem;
+
+		&__mockup-img {
+			bottom: 8rem;
+		}
+
+		&__heading {
+			font-size: 4rem;
+
+			span {
+				font-size: 5rem;
+			}
+		}
+
+		&__form {
+			width: 80%;
+			margin: auto auto 0 auto;
+		}
+	}
+
+	@media screen and (max-width: 650px) {
+		min-height: 25rem;
+
+		&__intro {
+			justify-content: flex-end;
+		}
+
+		&__mockup-img {
+			top: 8rem;
+			bottom: unset;
+		}
+
+		&__heading {
+			font-size: 2.5rem;
+
+			span {
+				font-size: 4rem;
+				margin-right: -2rem;
+			}
+		}
+
+		&__illustration {
+			width: 30%;
+		}
+
+		&__form {
+			width: inherit;
+
+			&--heading {
+				font-size: 1em;
+			}
+		}
+	}
+}

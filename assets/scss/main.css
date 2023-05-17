@@ -2651,6 +2651,131 @@ nav .connect #create1:hover {
     display: flex !important;
   }
 }
+.coming-soon {
+  min-height: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 4rem;
+  position: relative;
+}
+.coming-soon__intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coming-soon__mockup-img {
+  width: 40%;
+  position: absolute;
+  left: 2rem;
+  bottom: 0;
+}
+.coming-soon__heading {
+  font-weight: 400;
+  font-size: 6rem;
+  color: rgb(4, 30, 14);
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: rotate(-6deg);
+}
+.coming-soon__heading span {
+  display: inline-block;
+  font-size: 8rem;
+  margin-right: -4rem;
+  align-self: flex-end;
+}
+.coming-soon__illustration {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.coming-soon__form {
+  width: 60%;
+  max-width: 35rem;
+  margin: 2rem 4rem 4rem 10rem;
+}
+.coming-soon__form--heading {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.coming-soon__form--item {
+  border: 2px solid rgb(84, 84, 84);
+  border-radius: 0.5rem;
+  display: flex;
+  padding: 2px;
+}
+.coming-soon__form--input {
+  border: unset;
+  outline: unset;
+  background-color: transparent;
+  flex: 1;
+  margin-right: 0.5rem;
+}
+.coming-soon__form .icon {
+  display: inline-block;
+  margin: 5px;
+  height: 2rem;
+  filter: invert(59%) sepia(28%) saturate(1245%) hue-rotate(91deg) brightness(90%) contrast(85%);
+}
+@media screen and (max-width: 1024px) {
+  .coming-soon__mockup-img {
+    left: 1rem;
+    bottom: 3rem;
+  }
+  .coming-soon__form {
+    max-width: 30rem;
+    margin: 1rem 4rem 2rem 14rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .coming-soon {
+    min-height: 32rem;
+  }
+  .coming-soon__mockup-img {
+    bottom: 8rem;
+  }
+  .coming-soon__heading {
+    font-size: 4rem;
+  }
+  .coming-soon__heading span {
+    font-size: 5rem;
+  }
+  .coming-soon__form {
+    width: 80%;
+    margin: auto auto 0 auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  .coming-soon {
+    min-height: 25rem;
+  }
+  .coming-soon__intro {
+    justify-content: flex-end;
+  }
+  .coming-soon__mockup-img {
+    top: 8rem;
+    bottom: unset;
+  }
+  .coming-soon__heading {
+    font-size: 2.5rem;
+  }
+  .coming-soon__heading span {
+    font-size: 4rem;
+    margin-right: -2rem;
+  }
+  .coming-soon__illustration {
+    width: 30%;
+  }
+  .coming-soon__form {
+    width: inherit;
+  }
+  .coming-soon__form--heading {
+    font-size: 1em;
+  }
+}
+
 /*======FOOTER SECTION STYLING=====*/
 footer {
   position: relative;
