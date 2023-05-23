@@ -2664,6 +2664,7 @@ nav .connect #create1:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 4rem;
 }
 .coming-soon__mockup-img {
   width: 40%;
@@ -2689,12 +2690,13 @@ nav .connect #create1:hover {
 }
 .coming-soon__illustration {
   display: inline-block;
-  margin-left: 1rem;
+  position: relative;
+  bottom: 4rem;
 }
 .coming-soon__form {
   width: 60%;
   max-width: 35rem;
-  margin: 2rem 4rem 4rem 10rem;
+  margin: -2rem 4rem 4rem 10rem;
 }
 .coming-soon__form--heading {
   font-size: 1.5rem;
@@ -2720,21 +2722,31 @@ nav .connect #create1:hover {
   filter: invert(59%) sepia(28%) saturate(1245%) hue-rotate(91deg) brightness(90%) contrast(85%);
 }
 @media screen and (max-width: 1024px) {
+  .coming-soon__intro {
+    width: 100%;
+    justify-content: flex-end;
+  }
   .coming-soon__mockup-img {
-    left: 1rem;
-    bottom: 3rem;
+    width: 50%;
+    left: 0;
+    bottom: -1rem;
   }
   .coming-soon__form {
     max-width: 30rem;
-    margin: 1rem 4rem 2rem 14rem;
+    margin: -2rem 4rem 2rem 22rem;
   }
 }
 @media screen and (max-width: 768px) {
   .coming-soon {
     min-height: 32rem;
   }
+  .coming-soon__illustration {
+    width: 42%;
+  }
   .coming-soon__mockup-img {
-    bottom: 8rem;
+    bottom: 0;
+    top: 16rem;
+    left: 2rem;
   }
   .coming-soon__heading {
     font-size: 4rem;
@@ -2744,29 +2756,31 @@ nav .connect #create1:hover {
   }
   .coming-soon__form {
     width: 80%;
-    margin: auto auto 0 auto;
+    margin: 6rem auto 0 auto;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 450px) {
   .coming-soon {
     min-height: 25rem;
   }
   .coming-soon__intro {
-    justify-content: flex-end;
+    width: 80%;
   }
   .coming-soon__mockup-img {
-    top: 8rem;
+    top: 11rem;
     bottom: unset;
+    width: 45%;
   }
   .coming-soon__heading {
     font-size: 2.5rem;
   }
   .coming-soon__heading span {
     font-size: 4rem;
-    margin-right: -2rem;
+    margin-right: -1.5rem;
   }
   .coming-soon__illustration {
     width: 30%;
+    bottom: 1rem;
   }
   .coming-soon__form {
     width: inherit;

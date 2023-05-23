@@ -1622,6 +1622,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		margin-top: 4rem;
 	}
 
 	// MOCKUP IMAGE
@@ -1653,14 +1654,16 @@
 
 	&__illustration {
 		display: inline-block;
-		margin-left: 1rem;
+		// margin-left: 0.8rem;
+		position: relative;
+		bottom: 4rem;
 	}
 
 	// COMING SOON CTA FORM
 	&__form {
 		width: 60%;
 		max-width: 35rem;
-		margin: 2rem 4rem 4rem 10rem;
+		margin: -2rem 4rem 4rem 10rem;
 
 		&--heading {
 			font-size: 1.5rem;
@@ -1694,22 +1697,34 @@
 
 	// =============== COMING SOON (iPALS) MEDIA QUERIES ========================
 	@media screen and (max-width: 1024px) {
+		&__intro {
+			width: 100%;
+			justify-content: flex-end;
+		}
+
 		&__mockup-img {
-			left: 1rem;
-			bottom: 3rem;
+			width: 50%;
+			left: 0;
+			bottom: -1rem;
 		}
 
 		&__form {
 			max-width: 30rem;
-			margin: 1rem 4rem 2rem 14rem;
+			margin: -2rem 4rem 2rem 22rem;
 		}
 	}
 
 	@media screen and (max-width: 768px) {
 		min-height: 32rem;
 
+		&__illustration {
+			width: 42%;
+		}
+
 		&__mockup-img {
-			bottom: 8rem;
+			bottom: 0;
+			top: 16rem;
+			left: 2rem;
 		}
 
 		&__heading {
@@ -1722,20 +1737,22 @@
 
 		&__form {
 			width: 80%;
-			margin: auto auto 0 auto;
+			margin: 6rem auto 0 auto;
 		}
 	}
 
-	@media screen and (max-width: 650px) {
+	@media screen and (max-width: 450px) {
 		min-height: 25rem;
 
 		&__intro {
-			justify-content: flex-end;
+			width: 80%;
 		}
 
 		&__mockup-img {
-			top: 8rem;
+			top: 11rem;
+			// left: 3rem;
 			bottom: unset;
+			width: 45%;
 		}
 
 		&__heading {
@@ -1743,12 +1760,14 @@
 
 			span {
 				font-size: 4rem;
-				margin-right: -2rem;
+				margin-right: -1.5rem;
 			}
 		}
 
 		&__illustration {
 			width: 30%;
+			// margin-left: 0.4rem;
+			bottom: 1rem;
 		}
 
 		&__form {
